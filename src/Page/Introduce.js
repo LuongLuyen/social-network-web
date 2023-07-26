@@ -3,6 +3,8 @@ import '../Style/PageStyle/Introduce.css'
 import Img from "../assets/img/aaa.jpg"
 import Bg from "../assets/img/abc.jpg"
 import Anhnen from "../assets/img/anhnen.jpg"
+import {Link} from "react-router-dom"
+
 function Introduce() {
     return ( 
         <div>
@@ -84,14 +86,16 @@ function Introduce() {
                                 <span> Ghi nhớ tôi</span>
                                 <span> quên mật khẩu</span>
                             </div>
-                            <button className="login">Đăng nhập</button>
+                            <Link to="/home">
+                                <button className="login">Đăng nhập</button>
+                            </Link>
                             <div className="content__register">
                                 Mình chưa có tài khoản ? Đăng ký ngay nào
                             </div>
                         </div>
                     </div>
                     <div className="content__aside-hot">
-                        Chủ đề nóng trên [name]
+                        Chủ đề nóng trên mạng
                         <div className="aside__hot-main">
                             <img className="img" alt ="img" src={Img}/>
                             <div>

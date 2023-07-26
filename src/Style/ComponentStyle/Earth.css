@@ -1,0 +1,26 @@
+.earth__video {
+    width: 100%;
+    position: relative;
+}
+
+.earth__search{
+    position: absolute;
+    top: 2%;
+    left: 34%;
+}
+.earth__input {
+    width: 500px;
+    height: 40px;
+    border-radius: 999px;
+    padding-left: 20px;
+}
+.earth__logo {
+    color: #fff;
+    font-size: 3rem;
+}
+.earth__icon {
+    position: absolute;
+    font-size: 30px;
+    margin-left: -50px;
+    margin-top: 6px;
+}
