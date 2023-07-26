@@ -1,5 +1,6 @@
 import Header from "../Components/Header"
 import '../Style/PageStyle/Introduce.css'
+import Img from "../assets/img/aaa.jpg"
 function Introduce() {
     return ( 
         <div>
@@ -41,10 +42,73 @@ function Introduce() {
                 </article>
                 <aside className="content__aside">
                     <div className="content__aside-login">
-                        login
+                        Đăng nhập
+                        <div className="aside__login-main">
+                            <div>
+                                <input className="input" placeholder="Username"/>
+                                <input className="input" placeholder="Passwork"/>
+                            </div>
+                            <div className="content__register">
+                                <span> Ghi nhớ tôi</span>
+                                <span> quên mật khẩu</span>
+                            </div>
+                            <button className="login">Đăng nhập</button>
+                            <div className="content__register">
+                                Mình chưa có tài khoản ? Đăng ký ngay nào
+                            </div>
+                        </div>
                     </div>
                     <div className="content__aside-hot">
-                        hot
+                        Chủ đề nóng trên [name]
+                        <div className="aside__hot-main">
+                            <img className="img" alt ="img" src={Img}/>
+                            <div>
+                                <div className="title">Cảm hứng của ngày...</div>
+                                <div className="title1">60,024 triệu lượt đọc 6320...</div>
+                            </div>
+                        </div>
+                        <div className="aside__hot-main">
+                            <img className="img" alt ="img" src={Img}/>
+                            <div>
+                                <div className="title">Cảm hứng của ngày...</div>
+                                <div className="title1">60,024 triệu lượt đọc 6320...</div>
+                            </div>
+                        </div>
+                        <div className="aside__hot-main">
+                            <img className="img" alt ="img" src={Img}/>
+                            <div>
+                                <div className="title">Cảm hứng của ngày...</div>
+                                <div className="title1">60,024 triệu lượt đọc 6320...</div>
+                            </div>
+                        </div>
+                        <div className="aside__hot-main">
+                            <img className="img" alt ="img" src={Img}/>
+                            <div>
+                                <div className="title">Cảm hứng của ngày...</div>
+                                <div className="title1">60,024 triệu lượt đọc 6320...</div>
+                            </div>
+                        </div>
+                        <div className="aside__hot-main">
+                            <img className="img" alt ="img" src={Img}/>
+                            <div>
+                                <div className="title">Cảm hứng của ngày...</div>
+                                <div className="title1">60,024 triệu lượt đọc 6320...</div>
+                            </div>
+                        </div>
+                        <div className="aside__hot-main">
+                            <img className="img" alt ="img" src={Img}/>
+                            <div>
+                                <div className="title">Cảm hứng của ngày...</div>
+                                <div className="title1">60,024 triệu lượt đọc 6320...</div>
+                            </div>
+                        </div>
+                        <div className="aside__hot-main">
+                            <img className="img" alt ="img" src={Img}/>
+                            <div>
+                                <div className="title">Cảm hứng của ngày...</div>
+                                <div className="title1">60,024 triệu lượt đọc 6320...</div>
+                            </div>
+                        </div>
                     </div>
                 </aside>
             </div>
