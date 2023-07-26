@@ -1,6 +1,8 @@
 import Header from "../Components/Header"
 import '../Style/PageStyle/Introduce.css'
 import Img from "../assets/img/aaa.jpg"
+import Bg from "../assets/img/abc.jpg"
+import Anhnen from "../assets/img/anhnen.jpg"
 function Introduce() {
     return ( 
         <div>
@@ -31,13 +33,43 @@ function Introduce() {
                 </nav>
                 <article className="content__article">
                     <div className="content__article-swiper">
-                        swiper
+                        <img className="swipe" alt ="img" src={Bg}/>
                     </div>
                     <div className="content__article-main">
-                        main
+                        <div className="aside__hot-main">
+                            <img className="bg" alt ="img" src={Anhnen}/>
+                            <div>
+                                <div className="title2">
+                                    [Gia đình TF] 2023 Chuỗi hòa nhạc "Kế hoạch hạ cánh" của gia đình TF - Born in Flame [Đánh giá]
+                                </div>
+                                <div className="title3">
+                                    Triết học là bộ môn nghiên cứu về những vấn đề chung và cơ bản của con người, 
+                                    thế giới quan và vị trí của con người trong thế giới quan, những vấn đề có kết 
+                                    nối với chân lý, sự tồn tại, kiến thức, giá trị, quy luật, ý thức, và ngôn ngữ. 
+                                </div>
+                                <div className="title3">
+                                    Kế hoạch hạ cánh - TransFormProject25 tháng 7 lúc 20:20
+                                </div>
+                            </div>
+                        </div>
                     </div>
                     <div className="content__article-main">
-                        main
+                        <div className="aside__hot-main">
+                            <img className="bg" alt ="img" src={Anhnen}/>
+                            <div>
+                                <div className="title2">
+                                    [Gia đình TF] 2023 Chuỗi hòa nhạc "Kế hoạch hạ cánh" của gia đình TF - Born in Flame [Đánh giá]
+                                </div>
+                                <div className="title3">
+                                    Triết học là bộ môn nghiên cứu về những vấn đề chung và cơ bản của con người, 
+                                    thế giới quan và vị trí của con người trong thế giới quan, những vấn đề có kết 
+                                    nối với chân lý, sự tồn tại, kiến thức, giá trị, quy luật, ý thức, và ngôn ngữ. 
+                                </div>
+                                <div className="title3">
+                                    Kế hoạch hạ cánh - TransFormProject25 tháng 7 lúc 20:20
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </article>
                 <aside className="content__aside">
