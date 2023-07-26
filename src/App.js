@@ -1,11 +1,10 @@
-import Header from './Components/Header'
+import Introduce from './Page/Introduce'
 import './App.css';
 
 function App() {
   return (
     <div className="App">
-      <Header/>
-      
+      <Introduce/>
     </div>
   );
 }
