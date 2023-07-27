@@ -69,7 +69,12 @@ function Home() {
                                 <img className="home__article-box2-img" alt="img" src = {Bghome}/>
                             </div>
                         </section>
+
                         <HomeContent/>
+                        <HomeContent/>
+                        <HomeContent/>
+                        <HomeContent/>
+                        
                     </article>
 
                     <aside className="home__aside">
@@ -77,7 +82,9 @@ function Home() {
                             <img className="home__aside-box1-img" alt="img" src = {Img}/>
                         </div>
                         <div className="home__aside-box2">
-                            Tìm kiếm nhiều nhất
+                            <h5>
+                                Tìm kiếm nhiều nhất
+                            </h5>
                             <div className="home__aside-box2-item">
                                 <span className="home__aside-box2-icon">
                                     <PiNumberCircleOneFill/>
