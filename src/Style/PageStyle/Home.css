@@ -1,42 +1,47 @@
+.home {
+    height: 100%;
+}
 .homecontent {
     margin-top: -4px;
     background-color: #111111;
-    height: 100%;
     color: #fff;
     display: flex;
     justify-content: center;
 }
-/* nav */
-.home__nav {
-    width: 11%;
-    height: 100vh;
-    background-color: #191919;
-    margin: 10px;
-    border-radius: 5px;
-}
+
 /* article */
 .home__article {
     margin-top: 10px;
     width: 44%;
     height: 100vh;
-
+    overflow-y: scroll;
 }
+/* ẩn thanh scroll */
+::-webkit-scrollbar {
+    display: none;
+}
+
 .home__article-box1 {
-    height: 40px;
+    height: 25px;
     border-radius: 5px;
     background-color: #191919;
     margin-bottom: 10px;
 }
+.home__article-box1-item {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.home__article-box1-item:hover{
+    background-color: orangered;
+    border-radius: 2px;
+    color: #333;
+}
 .home__article-box2 {
     height: 80px;
     border-radius: 5px;
-    background-color: #191919;
 }
-.home__article-box3 {
-    margin-top: 10px;
-    background-color: #191919;
-    height: 81vh;
-    border-radius: 5px;
+.home__article-box2-img {
+    width: 100%;
 }
 /* aside */
 .home__aside {
@@ -45,10 +50,13 @@
     height: 100vh;
 }
 .home__aside-box1 {
-    background-color: #ffdcdc;
     height: 200px;
     border-radius: 5px;
     color: #333;
+}
+.home__aside-box1-img {
+    width: 100%;
+    object-fit: cover;
 }
 .home__aside-box2 {
     margin-top: 10px;
@@ -57,22 +65,45 @@
     border-radius: 5px;
     font-size: 1.5rem;
     color: orangered;
+    font-weight: 800;
+    overflow-y: scroll;
 
 }
 .home__aside-box2-item {
     font-size: 1rem;
     display: flex;
     justify-content: flex-start;
-    padding-left: 25px;
+    padding-left: 10px;
     padding-top: 10px;
     color: #fff;
+    font-weight: 400;
+}
+.home__aside-box2-icon {
+    padding-right: 5px;
+    color: #ea8011;
 }
 .home__aside-box2-item:hover {
-    color: orangered;
+    color: #f26d5f;
 }
 .home__aside-box3 {
-    margin-top: 10px;
-    background-color: #191919;
-    height: 30vh;
+    margin-top: 40px;
+    height: 24vh;
     border-radius: 5px;
+    border: solid 2px #191919;
+}
+.home__aside-box3-item {
+    font-size: .8rem;
+}
+.aside-box3-title {
+    margin-top: 20px;
+    font-weight: 800;
+}
+.aside-box3-nd {
+    font-size: .6rem;
+    padding-top: 5px;
+    font-weight: 100;
+    flex-wrap: wrap;
+}
+.aside-box3-icon {
+    margin-right: 10px;
 }

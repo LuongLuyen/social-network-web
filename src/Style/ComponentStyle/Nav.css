@@ -1,0 +1,26 @@
+/* nav */
+.home__nav {
+    width: 11%;
+    height: 60vh;
+    background-color: #191919;
+    margin: 10px;
+    border-radius: 5px;
+}
+.home__nav-title {
+    font-weight: 900;
+    color: orangered;
+}
+.home__nav-item {
+    margin-left: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: flex-start;
+}
+.home__nav-item:hover {
+    background-color: aquamarine;
+    color: #333;
+}
+.home__nav-icon {
+    padding-right: 5px;
+    color: #ea8011;
+}
