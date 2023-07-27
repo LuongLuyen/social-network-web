@@ -1,14 +1,19 @@
 .header {
+    top: 0;
     height: 48px;
     display: flex;
     justify-content: space-between;
     border-bottom: solid 1px #b4b4b4;
+    position: fixed;
+    z-index: 1;
+    background-color: #191919;
+    color: rgb(248, 122, 12);
+    width: 100%;
 }
 .header__logo {
     margin: 5px;
     padding-right: 20px;
     font-size: 1.5rem;
-    color: rgb(248, 122, 12);
     font-weight: 700;
 }
 .header__search {
@@ -32,14 +37,14 @@
     margin: 10px;
 }
 .header__register{
-    color: rgb(248, 122, 12);
+
 }
 .header__vach{
     margin-left: 5px;
     margin-right: 5px;
 }
 .header__login{
-    color: rgb(248, 122, 12);
+
 }
 .search {
     margin-top: 6px;
