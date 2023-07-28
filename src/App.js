@@ -1,5 +1,6 @@
 import Introduce from './Page/Introduce'
 import Home from './Page/Home'
+import Film from './Page/Film'
 import{
   BrowserRouter as Router,
   Routes,
@@ -14,6 +15,7 @@ function App() {
         <Routes>
           <Route path='/' element={<Introduce/>}/>
           <Route path='/home' element={<Home/>}/>
+          <Route path='/film' element={<Film/>}/>
         </Routes>
     </Router>
     </div>

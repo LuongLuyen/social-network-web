@@ -2,6 +2,7 @@ import { AiOutlineHome } from 'react-icons/ai';
 import { AiOutlineVideoCamera } from 'react-icons/ai';
 import { SiRiotgames } from 'react-icons/si';
 import { CiSearch } from 'react-icons/ci';
+import {Link} from "react-router-dom"
 import "../Style/ComponentStyle/Header.css"
 function Header() {
     return ( 

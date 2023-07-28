@@ -1,0 +1,36 @@
+
+.video__main {
+    height: 30vh;
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+.video__main-item {
+    background-color: #111111;
+    width: 275px;
+    height: 250px;
+    margin: 10px;
+    border-radius: 5px;
+    color: #fff;
+}
+.video__item {
+    width: 100%;
+}
+.video__avata {
+    width: 15%;
+    border-radius: 999px;
+}
+.video__user-name {
+    font-size: .8rem;
+    margin-left: 10px;
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 5px;
+}
+
+.video__user {
+    margin-top: 20px;
+    margin-left: 5px;
+    display: flex;
+    justify-content: flex-start;
+}
