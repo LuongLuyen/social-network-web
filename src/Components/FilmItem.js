@@ -6,7 +6,7 @@ function FilmItem() {
         <div className="video__main">
             <div className="video__main-item">
                 <img className="video__item" alt="/" src={F}/>
-                <div>Phim hay nhất 2018</div>
+                <div className="video-title">Phim hay nhất 2018</div>
                 <div className="video__user">
                     <img className="video__avata" alt="/"src= {Avata}/>
                     <span>
@@ -18,7 +18,7 @@ function FilmItem() {
             
             <div className="video__main-item">
                 <img className="video__item" alt="/" src={F}/>
-                <div>Phim hay nhất 2018</div>
+                <div className="video-title">Phim hay nhất 2018</div>
                 <div className="video__user">
                     <img className="video__avata" alt="/"src= {Avata}/>
                     <span>
@@ -30,7 +30,7 @@ function FilmItem() {
 
             <div className="video__main-item">
                 <img className="video__item" alt="/" src={F}/>
-                <div>Phim hay nhất 2018</div>
+                <div className="video-title">Phim hay nhất 2018</div>
                 <div className="video__user">
                     <img className="video__avata" alt="/"src= {Avata}/>
                     <span>
@@ -42,7 +42,7 @@ function FilmItem() {
 
             <div className="video__main-item">
                 <img className="video__item" alt="/" src={F}/>
-                <div>Phim hay nhất 2018</div>
+                <div className="video-title">Phim hay nhất 2018</div>
                 <div className="video__user">
                     <img className="video__avata" alt="/"src= {Avata}/>
                     <span>
@@ -54,7 +54,7 @@ function FilmItem() {
 
             <div className="video__main-item">
                 <img className="video__item" alt="/" src={F}/>
-                <div>Phim hay nhất 2018</div>
+                <div className="video-title">Phim hay nhất 2018</div>
                 <div className="video__user">
                     <img className="video__avata" alt="/"src= {Avata}/>
                     <span>
@@ -66,7 +66,7 @@ function FilmItem() {
 
             <div className="video__main-item">
                 <img className="video__item" alt="/" src={F}/>
-                <div>Phim hay nhất 2018</div>
+                <div className="video-title">Phim hay nhất 2018</div>
                 <div className="video__user">
                     <img className="video__avata" alt="/"src= {Avata}/>
                     <span>
@@ -78,7 +78,7 @@ function FilmItem() {
 
             <div className="video__main-item">
                 <img className="video__item" alt="/" src={F}/>
-                <div>Phim hay nhất 2018</div>
+                <div className="video-title">Phim hay nhất 2018</div>
                 <div className="video__user">
                     <img className="video__avata" alt="/"src= {Avata}/>
                     <span>
@@ -90,7 +90,7 @@ function FilmItem() {
 
             <div className="video__main-item">
                 <img className="video__item" alt="/" src={F}/>
-                <div>Phim hay nhất 2018</div>
+                <div className="video-title">Phim hay nhất 2018</div>
                 <div className="video__user">
                     <img className="video__avata" alt="/"src= {Avata}/>
                     <span>
@@ -102,7 +102,7 @@ function FilmItem() {
 
             <div className="video__main-item">
                 <img className="video__item" alt="/" src={F}/>
-                <div>Phim hay nhất 2018</div>
+                <div className="video-title">Phim hay nhất 2018</div>
                 <div className="video__user">
                     <img className="video__avata" alt="/"src= {Avata}/>
                     <span>

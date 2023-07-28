@@ -34,3 +34,8 @@
     display: flex;
     justify-content: flex-start;
 }
+.video-title {
+    display: flex;
+    justify-content: flex-start;
+    margin: 0 10px 0 10px;
+}
