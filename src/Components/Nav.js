@@ -13,7 +13,7 @@ function Nav() {
                    <FaBlog/>
                 </span>
                 <span>
-                    Bài viết phổ biến
+                    Bài viết phổ bi...
                 </span>
             </div>
             <div className="home__nav-item">
@@ -21,7 +21,7 @@ function Nav() {
                    <BiSolidNews/>
                 </span>
                 <span>
-                    Danh sách tin tức
+                    Danh sách tin...
                 </span>
             </div>
             <div className="home__nav-item">
@@ -29,7 +29,7 @@ function Nav() {
                    <SiRiotgames/>
                 </span>
                 <span>
-                   Danh sách giải trí
+                   Danh sách giả...
                 </span>
             </div>
             <div className="home__nav-item">
@@ -37,7 +37,7 @@ function Nav() {
                    <MdTopic/>
                 </span>
                 <span>
-                   Danh sách chủ đề
+                   Danh sách ch...
                 </span>
             </div>
             <div className="home__nav-item">
@@ -45,7 +45,7 @@ function Nav() {
                    <PiFilmReelFill/>
                 </span>
                 <span>
-                    Danh sách phim
+                    Danh sách phi...
                 </span>
             </div>
         </nav>

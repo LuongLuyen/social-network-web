@@ -8,7 +8,9 @@ function Header() {
     return ( 
         <header className="header">
             <div className="header__search">
-                <div className="header__logo">Logo</div>
+                <Link to="/home" className="header__logo">
+                    Logo
+                </Link>
                 <input className="header__input" placeholder="Tìm kiếm"/>
                 <span className="search">
                     <CiSearch/>
@@ -16,16 +18,28 @@ function Header() {
             </div>
             <div className="header__list">
                 <span className="header__list-item">
-                    <AiOutlineHome/>
-                    <span>Trang chủ</span>
+                    <span className="header__list-icon">
+                        <AiOutlineHome/>
+                    </span>
+                    <Link className="header__list-title" to="/home">
+                        Trang chủ
+                    </Link>
                 </span>
                 <span className="header__list-item">
-                    <AiOutlineVideoCamera/>
-                    <span>Phim</span>
+                    <span className="header__list-icon">
+                        <AiOutlineVideoCamera/>
+                    </span>
+                    <Link className="header__list-title" to="/film">
+                        Phim
+                    </Link>
                 </span>
                 <span className="header__list-item">
-                    <SiRiotgames/>
-                    <span>Trò chơi</span>
+                    <span className="header__list-icon">
+                        <SiRiotgames/>
+                    </span>
+                    <Link className="header__list-title" to="/">
+                        Trò chơi
+                    </Link>
                 </span>
                 <span className="header__list-item">
                     <span className="header__register">Đăng ký</span>

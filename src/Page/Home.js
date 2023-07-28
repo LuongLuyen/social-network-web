@@ -114,7 +114,7 @@ function Home() {
                                     <PiNumberCircleFourFill/>
                                 </span>
                                 <span>
-                                    Phim thịnh hành trong tuần qua
+                                    Phim thịnh hành trong tuần q...
                                 </span>
                             </div>
                             <div className="home__aside-box2-item">
@@ -146,7 +146,7 @@ function Home() {
                                     <PiNumberCircleEightFill/>
                                 </span>
                                 <span>
-                                    Lãi suất ngân hàng tăng mạnh
+                                    Lãi suất ngân hàng tăng mạn...
                                 </span>
                             </div>
                             <div className="home__aside-box2-item">
