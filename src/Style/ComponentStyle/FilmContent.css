@@ -1,0 +1,9 @@
+.filmcontent {
+    background-color: #191919;
+    margin: 10px;
+    border-bottom: solid 5px #111111;
+}
+.filmcontent__video {
+    width: 100%;
+    height: 400px;
+}

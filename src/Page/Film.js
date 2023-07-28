@@ -10,9 +10,15 @@ import { PiListNumbersDuotone } from 'react-icons/pi'
 import { GiCampCookingPot } from 'react-icons/gi'
 import { SiRiotgames } from 'react-icons/si'
 import { BiSolidFilm } from 'react-icons/bi'
+import FilmContent from "../Components/FilmContent"
 
 import "../Style/PageStyle/Film.css"
+import { useState } from "react"
 function Film() {
+    const [click, setClick]= useState(false)
+    const handleClick = ( )=> {
+        setClick(!false)
+    }
     return ( 
         <div>
             <Header/>
@@ -103,12 +109,15 @@ function Film() {
                     </div>
                 </nav>
                 <div className="video__content">
-                    {/* <VideoContent/> */}
-                    <img className="video__swipe" alt="film" src={Img}/>
+                    {
+                       click? <FilmContent/> :<img className="video__swipe" alt="film" src={Img}/>
+                    }
                     <div className="video__title">
                         Video được đề xuất
                     </div>
-                    <FilmItem/>
+                    <div onClick={handleClick}>
+                        <FilmItem/>
+                    </div>
                 </div>
             </main>
         </div>

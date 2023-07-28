@@ -4,6 +4,7 @@
     color: red;
     display: flex;
     justify-content: center;
+    padding-bottom: 10px;
 }
 .video__nav {
     margin-top: 60px;
