@@ -31,7 +31,64 @@ function ChatMain() {
                 </div>
             </div>
             <div className="chat__main-content">
-                content
+                <div className="other__chat">
+                    <img className="other__chat-avt" alt="/" src={Avata}/>
+                    <div className="other__chat-nd">
+                        Đây là nội dung tin nhắn của người khác
+                    </div>
+                </div>
+                <div className="other__chat">
+                    <img className="other__chat-avt" alt="/" src={Avata}/>
+                    <div className="other__chat-nd">
+                        Đây là nội dung tin nhắn của người khác
+                    </div>
+                </div>
+
+                <div className="you__chat">
+                    Đây là tin nhắn của tôi
+                </div>
+                <div className="you__chat">
+                    Đây là tin nhắn của tôi
+                </div>
+                <div className="other__chat">
+                    <img className="other__chat-avt" alt="/" src={Avata}/>
+                    <div className="other__chat-nd">
+                        Đây là nội dung tin nhắn của người khác
+                    </div>
+                </div>
+                <div className="you__chat">
+                    Đây là tin nhắn của tôi
+                </div>
+                <div className="you__chat">
+                    Đây là tin nhắn của tôi
+                </div>
+                <div className="other__chat">
+                    <img className="other__chat-avt" alt="/" src={Avata}/>
+                    <div className="other__chat-nd">
+                        Đây là nội dung tin nhắn của người khác
+                    </div>
+                </div>
+                <div className="you__chat">
+                    Đây là tin nhắn của tôi
+                </div>
+                <div className="other__chat">
+                    <img className="other__chat-avt" alt="/" src={Avata}/>
+                    <div className="other__chat-nd">
+                        Đây là nội dung tin nhắn của người khác
+                    </div>
+                </div>
+                <div className="other__chat">
+                    <img className="other__chat-avt" alt="/" src={Avata}/>
+                    <div className="other__chat-nd">
+                        Đây là nội dung tin nhắn của người khác
+                    </div>
+                </div>
+                <div className="other__chat">
+                    <img className="other__chat-avt" alt="/" src={Avata}/>
+                    <div className="other__chat-nd">
+                        Đây là nội dung tin nhắn của người khác
+                    </div>
+                </div>
             </div>
             <div className="chat__main-footer">
                 <span className="chat__main-footer-item">
