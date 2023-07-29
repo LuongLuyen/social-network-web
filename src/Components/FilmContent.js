@@ -5,7 +5,7 @@ function FilmContent() {
         <div className="filmcontent">
            <video className="filmcontent__video" src={Video} controls/>
         </div>
-     );
+     )
 }
 
-export default FilmContent;
+export default FilmContent

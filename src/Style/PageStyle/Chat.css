@@ -13,6 +13,25 @@
     width: 5%;
     margin: 5px;
 }
+.chat__nav-header {
+    height: 80vh;
+
+}
+.chat__nav-user {
+   width: 50%;
+   border-radius: 999px;
+   border: solid 1px #ea8011;
+}
+.chat__nav-icon {
+   margin: 20px;
+   font-size: 2rem;
+   color: #fff;
+}
+.chat__nav-icon:hover {
+    color: #ea8011;
+}
+
+
 .chat__main {
     background-color: #191919;
     height: 100vh;

@@ -1,5 +1,5 @@
 import Video from "../assets/Video/videobg.mp4"
-import { CiSearch } from 'react-icons/ci';
+import { CiSearch } from 'react-icons/ci'
 import "../Style/ComponentStyle/Earth.css"
 function Earth() {
     return ( 
@@ -17,7 +17,7 @@ function Earth() {
                 </div>
            </div>
         </div>
-     );
+     )
 }
 
-export default Earth;
+export default Earth

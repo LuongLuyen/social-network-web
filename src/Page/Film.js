@@ -121,7 +121,7 @@ function Film() {
                 </div>
             </main>
         </div>
-     );
+     )
 }
 
-export default Film;
+export default Film

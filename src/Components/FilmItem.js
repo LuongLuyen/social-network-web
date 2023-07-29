@@ -112,7 +112,7 @@ function FilmItem() {
                 </div>
             </div>
         </div>
-     );
+     )
 }
 
-export default FilmItem;
+export default FilmItem

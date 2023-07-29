@@ -192,8 +192,8 @@ function Home() {
             </div>
             {active && <Header/>} 
         </>
-     );
+     )
 
 }
 
-export default Home;
+export default Home

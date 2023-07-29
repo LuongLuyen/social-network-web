@@ -1,7 +1,7 @@
-import { AiOutlineHome } from 'react-icons/ai';
-import { AiOutlineVideoCamera } from 'react-icons/ai';
-import { SiRiotgames } from 'react-icons/si';
-import { CiSearch } from 'react-icons/ci';
+import { AiOutlineHome } from 'react-icons/ai'
+import { AiOutlineVideoCamera } from 'react-icons/ai'
+import { RiMessengerLine } from 'react-icons/ri'
+import { CiSearch } from 'react-icons/ci'
 import {Link} from "react-router-dom"
 import "../Style/ComponentStyle/Header.css"
 function Header() {
@@ -35,10 +35,10 @@ function Header() {
                 </span>
                 <span className="header__list-item">
                     <span className="header__list-icon">
-                        <SiRiotgames/>
+                        <RiMessengerLine/>
                     </span>
-                    <Link className="header__list-title" to="/">
-                        Trò chơi
+                    <Link className="header__list-title" to="/chat">
+                        Nhắn tin
                     </Link>
                 </span>
                 <span className="header__list-item">
@@ -48,7 +48,7 @@ function Header() {
                 </span>
             </div>
         </header>
-     );
+     )
 }
 
-export default Header;
+export default Header

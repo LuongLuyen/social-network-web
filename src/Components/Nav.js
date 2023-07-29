@@ -49,7 +49,7 @@ function Nav() {
                 </span>
             </div>
         </nav>
-     );
+     )
 }
 
-export default Nav;
+export default Nav

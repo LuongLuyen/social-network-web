@@ -57,7 +57,7 @@ function HomeContent() {
                 </div>
             </div>
         </div>
-     );
+     )
 }
 
 export default HomeContent;
