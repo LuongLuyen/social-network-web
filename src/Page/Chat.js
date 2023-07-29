@@ -1,5 +1,6 @@
 import "../Style/PageStyle/Chat.css"
 import Header from "../Components/Header"
+import ChatMain from "../Components/ChatMain"
 import ChatList from "../Components/ChatList"
 import { BsMessenger } from 'react-icons/bs'
 import { BsPeopleFill } from 'react-icons/bs'
@@ -24,8 +25,7 @@ function Chat() {
                     <img className="chat__nav-user" alt="/"src={Avata}/>
                 </div>
                 <ChatList/>
-                <div className="chat__main">main</div>
-
+                <ChatMain/>
                 <div className="chat__profile">
                     <div className="chat__profile-user">
                         <img className="chat__profile-avt" alt="/" src= {Avata}/>
