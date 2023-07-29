@@ -43,4 +43,45 @@
     height: 100vh;
     width: 20%;
     margin: 5px;
+    color: #fff;
+}
+.chat__profile-avt {
+    width: 30%;
+    border-radius: 999px;
+    border: solid 1px #fff;
+}
+.chat__profile-user {
+    background-color: #111111;
+    margin: 50px;
+    padding: 20px 0 20px 0;
+    border-radius: 10px;
+}
+.chat__profile-name {
+    color: #ea8011;
+}
+.chat__profile-active {
+   font-size: .8rem;
+   color: rgb(53, 246, 23);
+}
+.chat__profile-icon {
+    font-size: 2rem;
+    margin: 20px;
+}
+.chat__profile-icon:hover {
+    color: #ea8011;
+}
+.Chat__profile-function {
+    display: flex;
+    justify-content: flex-start;
+    height: 40px;
+    padding-left: 20px;
+}
+.Chat__profile-function:hover{
+    background-color: #ea8011;
+    border-top-left-radius: 999px;
+    border-bottom-left-radius: 999px;
+    color: #333;
+}
+.Chat__profile-f {
+    margin: 60px 0 0 40px;
 }
