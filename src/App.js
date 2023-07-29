@@ -1,6 +1,7 @@
 import Introduce from './Page/Introduce'
 import Home from './Page/Home'
 import Film from './Page/Film'
+import Chat from './Page/Chat'
 import{
   BrowserRouter as Router,
   Routes,
@@ -16,6 +17,7 @@ function App() {
           <Route path='/' element={<Introduce/>}/>
           <Route path='/home' element={<Home/>}/>
           <Route path='/film' element={<Film/>}/>
+          <Route path='/chat' element={<Chat/>}/>
         </Routes>
     </Router>
     </div>
