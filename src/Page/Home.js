@@ -17,9 +17,24 @@ import Homebg from "../assets/img/homebg.jpg"
 import HomeContent from "../Components/HomeContent"
 import Header from "../Components/Header"
 import Nav from "../Components/Nav"
-import { useState } from "react"
+import { useState, useEffect } from "react"
 function Home() {
+    const CHECK = (window.location.pathname).slice(1)
     const [active, setActive]= useState(false)
+    
+    useEffect(() => {
+        if(CHECK === "home"){
+            const roleOld = JSON.parse(sessionStorage.getItem('role'))
+            if(roleOld !== "ADMIN")
+            sessionStorage.setItem('role', JSON.stringify("USER"))
+        }else if(CHECK === "admin"){
+            const roleOld = JSON.parse(sessionStorage.getItem('role'))
+            if(roleOld === null){
+                sessionStorage.setItem('role', JSON.stringify("ADMIN"))
+            }
+        }
+    }, [CHECK])
+
     const changeHeader = ()=>{
         if(window.scrollY >= 160){
             setActive(true)
@@ -28,7 +43,7 @@ function Home() {
         }
     }
     window.addEventListener('scroll', changeHeader)
-
+    
     return ( 
         <>
             <div className="home">

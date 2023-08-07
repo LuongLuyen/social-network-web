@@ -7,7 +7,6 @@ import "../Style/ComponentStyle/Header.css"
 import { useEffect, useState } from 'react'
 function Header() {
     const [localData, setLocalData] = useState(null)
-    console.log(localData)
     useEffect(() => {
         const data = JSON.parse(sessionStorage.getItem('localData'))
         if (data) {
@@ -17,6 +16,7 @@ function Header() {
 
     const checkLogin = () =>{
         sessionStorage.setItem('localData', JSON.stringify(null))
+        sessionStorage.setItem('role', JSON.stringify(null))
     }
     return ( 
         <header className="header">
