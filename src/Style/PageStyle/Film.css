@@ -23,7 +23,7 @@
     overflow-y: scroll;
 }
 .video__swipe {
-    width: 100%;
+    width: 101%;
     object-fit: cover;
 }
 

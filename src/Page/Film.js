@@ -1,5 +1,5 @@
 import Header from "../Components/Header"
-import Img from "../assets/img/film.jpg"
+import Videobg from "../assets/img/videobg.jpg"
 import FilmItem from "../Components/FilmItem"
 import { BiGroup } from 'react-icons/bi'
 import { FaVideo } from 'react-icons/fa'
@@ -110,7 +110,7 @@ function Film() {
                 </nav>
                 <div className="video__content">
                     {
-                       click? <FilmContent/> :<img className="video__swipe" alt="film" src={Img}/>
+                       click? <FilmContent/> :<img className="video__swipe" alt="film" src={Videobg}/>
                     }
                     <div className="video__title">
                         Video được đề xuất

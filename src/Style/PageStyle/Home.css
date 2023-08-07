@@ -43,6 +43,7 @@
 }
 .home__article-box2-img {
     width: 100%;
+    border-radius: 10px;
 }
 /* aside */
 .home__aside {

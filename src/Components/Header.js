@@ -4,7 +4,17 @@ import { RiMessengerLine } from 'react-icons/ri'
 import { CiSearch } from 'react-icons/ci'
 import {Link} from "react-router-dom"
 import "../Style/ComponentStyle/Header.css"
+import { useEffect, useState } from 'react'
 function Header() {
+    const [localData, setLocalData] = useState(null)
+    console.log(localData)
+    useEffect(() => {
+        const data = JSON.parse(sessionStorage.getItem('localData'))
+        if (data) {
+            setLocalData(data)
+        }
+    }, [])
+
     const checkLogin = () =>{
         sessionStorage.setItem('localData', JSON.stringify(null))
     }
@@ -45,12 +55,22 @@ function Header() {
                     </Link>
                 </span>
                 <span className="header__list-item">
-                    <span className="header__register">Đăng ký</span>
-                    <span className="header__vach">|</span>
-                    <span className="header__login">Đăng nhập</span>
-                    <Link onClick={checkLogin}className="header__list-title" to="/">
-                        Thoát
-                    </Link>
+                    {localData ?
+                    <>
+                        <span className="header__register">Xin chào</span>
+                        <span className="header__vach">|</span>
+                        <span className="header__login">{localData}</span>
+                        <Link onClick={checkLogin}className="header__logout" to="/">
+                            Thoát !
+                        </Link>
+                    </>
+                    : 
+                    <>
+                        <span className="header__register">Đăng ký</span>
+                        <span className="header__vach">|</span>
+                        <span className="header__login">Đăng nhập</span>
+                    </>
+                    }
                 </span>
             </div>
         </header>

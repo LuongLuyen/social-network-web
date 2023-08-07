@@ -2,8 +2,9 @@ import { useState,useEffect } from "react"
 import Header from "../Components/Header"
 import '../Style/PageStyle/Introduce.css'
 import Img from "../assets/img/aaa.jpg"
-import Bg from "../assets/img/abc.jpg"
+import Loginbg from "../assets/img/loginbg.jpg"
 import Anhnen from "../assets/img/anhnen.jpg"
+import Anhnen1 from "../assets/img/anhnen1.jpg"
 
 function Introduce() {
     const [localData, setLocalData] = useState(null)
@@ -43,11 +44,11 @@ function Introduce() {
                 </nav>
                 <article className="content__article">
                     <div className="content__article-swiper">
-                        <img className="swipe" alt ="img" src={Bg}/>
+                        <img className="swipe" alt ="img" src={Loginbg}/>
                     </div>
                     <div className="content__article-main">
                         <div className="aside__hot-main">
-                            <img className="bg" alt ="img" src={Anhnen}/>
+                            <img className="bg" alt ="img" src={Anhnen1}/>
                             <div>
                                 <div className="title2">
                                     [Gia đình TF] 2023 Chuỗi hòa nhạc "Kế hoạch hạ cánh" của gia đình TF - Born in Flame [Đánh giá]
