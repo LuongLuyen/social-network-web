@@ -1,11 +1,19 @@
+import { useState,useEffect } from "react"
 import Header from "../Components/Header"
 import '../Style/PageStyle/Introduce.css'
 import Img from "../assets/img/aaa.jpg"
 import Bg from "../assets/img/abc.jpg"
 import Anhnen from "../assets/img/anhnen.jpg"
-import {Link} from "react-router-dom"
 
 function Introduce() {
+    const [localData, setLocalData] = useState(null)
+
+    useEffect(() => {
+        if(localData !== null){
+            sessionStorage.setItem('localData', JSON.stringify(localData))
+        }
+    }, [localData])
+
     return ( 
         <div>
             <Header/>
@@ -77,22 +85,33 @@ function Introduce() {
                 <aside className="content__aside">
                     <div className="content__aside-login">
                         Đăng nhập
+                    <form method='POST' action= "http://localhost:5000/user-api/login">
                         <div className="aside__login-main">
                             <div>
-                                <input className="input" placeholder="Username"/>
-                                <input className="input" placeholder="Passwork"/>
+                                <input 
+                                    className="input" 
+                                    placeholder="Username"
+                                    type='text'
+                                    name='userName'
+                                    onChange={(e)=>setLocalData( e.target.value)}
+                                />
+                                <input 
+                                    className="input" 
+                                    placeholder="Password"
+                                    type='password'
+                                    name='password'
+                                />
                             </div>
                             <div className="content__register">
                                 <span> Ghi nhớ tôi</span>
                                 <span> quên mật khẩu</span>
                             </div>
-                            <Link to="/home">
                                 <button className="login">Đăng nhập</button>
-                            </Link>
                             <div className="content__register">
                                 Mình chưa có tài khoản ? Đăng ký ngay nào
                             </div>
                         </div>
+                    </form>
                     </div>
                     <div className="content__aside-hot">
                         Chủ đề nóng trên mạng

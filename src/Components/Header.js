@@ -5,6 +5,9 @@ import { CiSearch } from 'react-icons/ci'
 import {Link} from "react-router-dom"
 import "../Style/ComponentStyle/Header.css"
 function Header() {
+    const checkLogin = () =>{
+        sessionStorage.setItem('localData', JSON.stringify(null))
+    }
     return ( 
         <header className="header">
             <div className="header__search">
@@ -45,6 +48,9 @@ function Header() {
                     <span className="header__register">Đăng ký</span>
                     <span className="header__vach">|</span>
                     <span className="header__login">Đăng nhập</span>
+                    <Link onClick={checkLogin}className="header__list-title" to="/">
+                        Thoát
+                    </Link>
                 </span>
             </div>
         </header>

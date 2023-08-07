@@ -19,6 +19,9 @@
 .home__nav-item:hover {
     background-color: aquamarine;
     color: #333;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    padding-left: 10px;
 }
 .home__nav-icon {
     padding-right: 5px;

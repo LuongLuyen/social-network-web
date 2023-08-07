@@ -65,12 +65,15 @@
 }
 .home-btn {
     color: #ea8011;
-    width: 100px;
+    width: 120px;
     border-radius: 5px;
+}
+.home-icon {
+    margin: 10px;
 }
 .home-btn:hover {
     background-color: #ea8011;
-    width: 100px;
+    width: 120px;
     border-radius: 5px;
     color: #fff;
 }

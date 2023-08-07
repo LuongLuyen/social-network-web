@@ -63,7 +63,7 @@
 .chat__footer-input {
     bottom: 8px;
     width: 500px;
-    height: 30px;
+    height: 29px;
     border-radius: 999px;
     border-top-style: hidden;
     border-right-style: hidden;
@@ -71,6 +71,7 @@
     border-bottom-style: hidden;
     padding-left: 10px;
     position: relative;
+    padding-top: 4px;
 }
 .chat__footer-input:focus {
     outline: none;

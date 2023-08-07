@@ -20,7 +20,6 @@ import Nav from "../Components/Nav"
 import { useState } from "react"
 function Home() {
     const [active, setActive]= useState(false)
-    console.log(active)
     const changeHeader = ()=>{
         if(window.scrollY >= 160){
             setActive(true)

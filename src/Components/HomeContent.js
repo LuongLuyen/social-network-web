@@ -34,13 +34,13 @@ function HomeContent() {
             </div>
             <div className="home-content-action">
                 <div className="home-btn">
-                    <span>
+                    <span className="home-icon">
                         <AiFillLike/>
                     </span>
                     <span>Like</span>
                 </div>
                 <div className="home-btn">
-                    <span>
+                    <span className="home-icon">
                         <FaComments/>
                     </span>
                     <span>
@@ -48,7 +48,7 @@ function HomeContent() {
                     </span>
                 </div>
                 <div className="home-btn">
-                    <span>
+                    <span className="home-icon">
                         <FaShareAltSquare/>
                     </span>
                     <span>
