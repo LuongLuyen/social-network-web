@@ -1,0 +1,41 @@
+.admin {
+    background-color: #111111;
+    height: 100vh;
+}
+.admin__table {
+    display: flex;
+    justify-content: center;
+}
+.admin__table-list {
+    margin-top: 10%;
+    width: 90%;
+    background-color: #191919;
+    color: #fff;
+}
+.admin__update {
+    color: #1bfa06;
+}
+.admin__delete {
+    color: red;
+}
+.admin__item {
+    color: #ea8011;
+}
+.admin__page {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+.admin__page-list {
+    background-color: #5b5b5b;
+    margin: 10px;
+    width: 50px;
+    color: #fff;
+}
+.admin__page-list:hover {
+    background-color: #ea8011;
+    color: #333;
+}
+.tr {
+    height: 50px;
+}
