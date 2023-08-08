@@ -7,10 +7,13 @@ import "../Style/ComponentStyle/Header.css"
 import { useEffect, useState } from 'react'
 function Header() {
     const [localData, setLocalData] = useState(null)
+    const [role, setRole] = useState(null)
     useEffect(() => {
         const data = JSON.parse(sessionStorage.getItem('localData'))
-        if (data) {
+        const dataRole = JSON.parse(sessionStorage.getItem('role'))
+        if (data && dataRole) {
             setLocalData(data)
+            setRole(dataRole)
         }
     }, [])
 
@@ -55,9 +58,15 @@ function Header() {
                     </Link>
                 </span>
                 <span className="header__list-item">
-                    {localData ?
+                    {localData && role ?
                     <>
-                        <span className="header__register">Xin chào</span>
+                        {role === "ADMIN" ? 
+                            <Link className="header__register" to="/admin">
+                                Admin 
+                            </Link>
+                            : 
+                            <span className="header__register">Xin chào</span>
+                        }
                         <span className="header__vach">|</span>
                         <span className="header__login">{localData}</span>
                         <Link onClick={checkLogin}className="header__logout" to="/">

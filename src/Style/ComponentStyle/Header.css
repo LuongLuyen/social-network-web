@@ -39,14 +39,15 @@
     margin: 10px;
 }
 .header__register{
-
+   text-decoration: none;
+   color: #ea8011;
 }
 .header__vach{
     margin-left: 5px;
     margin-right: 5px;
 }
 .header__login{
-
+    color: #ea8011;
 }
 .search {
     margin-top: 6px;

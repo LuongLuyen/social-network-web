@@ -1,0 +1,42 @@
+.user {
+    width: 100%;
+}
+.user__table {
+    display: flex;
+    justify-content: center;
+}
+.user__table-list {
+    background-color: #191919;
+    color: #fff;
+    width: 100%;
+    margin: 60px 10px 10px 10px;
+}
+.user__update {
+    color: #1bfa06;
+}
+.user__delete {
+    color: red;
+}
+.user__item {
+    color: #ea8011;
+}
+.user__page {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+.user__page-list {
+    background-color: #5b5b5b;
+
+    
+    margin: 10px;
+    width: 50px;
+    color: #fff;
+}
+.user__page-list:hover {
+    background-color: #ea8011;
+    color: #333;
+}
+.tr {
+    height: 50px;
+}
