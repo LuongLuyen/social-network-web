@@ -4,7 +4,7 @@ import Header from "../Components/Header"
 import AUser from "../Components/AUser"
 import "../Style/PageStyle/Admin.css"
 import { useDispatch, useSelector } from "react-redux"
-import { fetchDataUser } from "../redux/actions"
+import adminSlice from '../redux/Slice/adminSlice'
 import {fetchDataSelector} from '../redux/selectors'
 function Admin() {
    const [user,setUser] = useState([])
@@ -23,7 +23,7 @@ function Admin() {
 
    const dispatch = useDispatch()
    const getData =()=> {
-        dispatch(fetchDataUser(user))
+        dispatch(adminSlice.actions.addUser(user))
         setCheck(true)
    }
 
