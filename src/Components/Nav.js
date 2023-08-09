@@ -1,9 +1,9 @@
-import "../Style/ComponentStyle/Nav.css"
 import { FaBlog } from 'react-icons/fa'
 import { BiSolidNews } from 'react-icons/bi'
 import { SiRiotgames } from 'react-icons/si'
 import { MdTopic } from 'react-icons/md'
 import { PiFilmReelFill } from 'react-icons/pi'
+import "../Style/ComponentStyle/Nav.css"
 function Nav() {
     return ( 
         <nav className="home__nav">

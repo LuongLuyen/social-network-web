@@ -3,8 +3,8 @@ import { AiOutlineVideoCamera } from 'react-icons/ai'
 import { RiMessengerLine } from 'react-icons/ri'
 import { CiSearch } from 'react-icons/ci'
 import {Link} from "react-router-dom"
-import "../Style/ComponentStyle/Header.css"
 import { useEffect, useState } from 'react'
+import "../Style/ComponentStyle/Header.css"
 function Header() {
     const [localData, setLocalData] = useState(null)
     const [role, setRole] = useState(null)

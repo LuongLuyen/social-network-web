@@ -1,11 +1,11 @@
 import {useEffect} from 'react'
+import { useDispatch, useSelector } from "react-redux"
+import {fetchDataSelector} from '../redux/selectors'
+import {fetchUser} from '../redux/Slice/adminSlice'
 import Header from "../Components/Header"
 import AUser from "../Components/AUser"
-import "../Style/PageStyle/Admin.css"
-import { useDispatch, useSelector } from "react-redux"
 import adminSlice from '../redux/Slice/adminSlice'
-import {fetchUser} from '../redux/Slice/adminSlice'
-import {fetchDataSelector} from '../redux/selectors'
+import "../Style/PageStyle/Admin.css"
 function Admin() {
     const userStore = useSelector(fetchDataSelector)
     const dispatch = useDispatch()

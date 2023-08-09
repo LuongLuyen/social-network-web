@@ -1,5 +1,5 @@
-import Video from "../assets/Video/videobg.mp4"
 import { CiSearch } from 'react-icons/ci'
+import Video from "../assets/Video/videobg.mp4"
 import "../Style/ComponentStyle/Earth.css"
 function Earth() {
     return ( 

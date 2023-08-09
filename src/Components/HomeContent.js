@@ -1,9 +1,9 @@
-import "../Style/ComponentStyle/HomeContent.css"
-import Img from "../assets/img/aaa.jpg"
-import Bg from "../assets/img/anhnen.jpg"
 import { AiFillLike } from 'react-icons/ai'
 import { FaComments } from 'react-icons/fa'
 import { FaShareAltSquare } from 'react-icons/fa'
+import Img from "../assets/img/aaa.jpg"
+import Bg from "../assets/img/anhnen.jpg"
+import "../Style/ComponentStyle/HomeContent.css"
 function HomeContent() {
     return ( 
         <div className="home-content">

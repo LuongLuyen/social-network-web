@@ -1,13 +1,13 @@
-import "../Style/PageStyle/Chat.css"
-import Header from "../Components/Header"
-import ChatMain from "../Components/ChatMain"
-import ChatList from "../Components/ChatList"
 import { BsMessenger } from 'react-icons/bs'
 import { BsPeopleFill } from 'react-icons/bs'
 import { CgProfile } from 'react-icons/cg'
 import { MdOutlineNotifications } from 'react-icons/md'
 import { BiSearchAlt } from 'react-icons/bi'
+import Header from "../Components/Header"
+import ChatMain from "../Components/ChatMain"
+import ChatList from "../Components/ChatList"
 import Avata from "../assets/img/aaa.jpg"
+import "../Style/PageStyle/Chat.css"
 function Chat() {
     return ( 
         <>

@@ -1,10 +1,10 @@
 import { useState,useEffect } from "react"
 import Header from "../Components/Header"
-import '../Style/PageStyle/Introduce.css'
 import Img from "../assets/img/aaa.jpg"
 import Loginbg from "../assets/img/loginbg.jpg"
 import Anhnen from "../assets/img/anhnen.jpg"
 import Anhnen1 from "../assets/img/anhnen1.jpg"
+import '../Style/PageStyle/Introduce.css'
 
 function Introduce() {
     const [localData, setLocalData] = useState(null)

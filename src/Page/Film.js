@@ -11,9 +11,8 @@ import { GiCampCookingPot } from 'react-icons/gi'
 import { SiRiotgames } from 'react-icons/si'
 import { BiSolidFilm } from 'react-icons/bi'
 import FilmContent from "../Components/FilmContent"
-
-import "../Style/PageStyle/Film.css"
 import { useState } from "react"
+import "../Style/PageStyle/Film.css"
 function Film() {
     const [click, setClick]= useState(false)
     const handleClick = ( )=> {

@@ -1,5 +1,5 @@
-import "../Style/ComponentStyle/FilmContent.css"
 import Video from "../assets/Video/video.mp4"
+import "../Style/ComponentStyle/FilmContent.css"
 function FilmContent() {
     return ( 
         <div className="filmcontent">

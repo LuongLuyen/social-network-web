@@ -1,12 +1,12 @@
-import "../Style/ComponentStyle/ChatMain.css"
-import Avata from "../assets/img/aaa.jpg"
+import { BsFillArrowRightCircleFill } from 'react-icons/bs'
+import { AiFillPlusCircle } from 'react-icons/ai'
+import { MdInsertPhoto } from 'react-icons/md'
 import { AiFillPhone } from 'react-icons/ai'
+import { AiFillHeart } from 'react-icons/ai'
 import { FaVideo } from 'react-icons/fa'
 import { FaList } from 'react-icons/fa'
-import { MdInsertPhoto } from 'react-icons/md'
-import { AiFillPlusCircle } from 'react-icons/ai'
-import { AiFillHeart } from 'react-icons/ai'
-import { BsFillArrowRightCircleFill } from 'react-icons/bs'
+import Avata from "../assets/img/aaa.jpg"
+import "../Style/ComponentStyle/ChatMain.css"
 function ChatMain() {
     return ( 
         <div className="chat__main">

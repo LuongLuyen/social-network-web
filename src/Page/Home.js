@@ -12,12 +12,12 @@ import { PiNumberCircleSixFill } from 'react-icons/pi'
 import { PiNumberCircleSevenFill } from 'react-icons/pi'
 import { PiNumberCircleEightFill } from 'react-icons/pi'
 import { PiNumberCircleNineFill } from 'react-icons/pi'
+import { useState, useEffect } from "react"
 import Img from "../assets/img/aab.jpg"
 import Homebg from "../assets/img/homebg.jpg"
 import HomeContent from "../Components/HomeContent"
 import Header from "../Components/Header"
 import Nav from "../Components/Nav"
-import { useState, useEffect } from "react"
 function Home() {
     const CHECK = (window.location.pathname).slice(1)
     const [active, setActive]= useState(false)
