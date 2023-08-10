@@ -2,12 +2,15 @@ import { AiOutlineHome } from 'react-icons/ai'
 import { AiOutlineVideoCamera } from 'react-icons/ai'
 import { RiMessengerLine } from 'react-icons/ri'
 import { CiSearch } from 'react-icons/ci'
+import { useDispatch} from "react-redux"
+import introduceSlice from '../redux/Slice/introduceSlice'
 import {Link} from "react-router-dom"
 import { useEffect, useState } from 'react'
 import "../Style/ComponentStyle/Header.css"
 function Header() {
     const [localData, setLocalData] = useState(null)
     const [role, setRole] = useState(null)
+
     useEffect(() => {
         const data = JSON.parse(sessionStorage.getItem('localData'))
         const dataRole = JSON.parse(sessionStorage.getItem('role'))
@@ -16,6 +19,14 @@ function Header() {
             setRole(dataRole)
         }
     }, [])
+    const dispatch = useDispatch()
+
+    const clickRegister = ()=>{
+        dispatch(introduceSlice.actions.statusLogin([{register: true}, {login: false}]))
+    }
+    const clickLogin = ()=>{
+        dispatch(introduceSlice.actions.statusLogin([{register: false}, {login: true}]))
+    }
 
     const checkLogin = () =>{
         sessionStorage.setItem('localData', JSON.stringify(null))
@@ -75,9 +86,9 @@ function Header() {
                     </>
                     : 
                     <>
-                        <span className="header__register">Đăng ký</span>
+                        <span onClick={clickRegister} className="header__register">Đăng ký</span>
                         <span className="header__vach">|</span>
-                        <span className="header__login">Đăng nhập</span>
+                        <span onClick={clickLogin} className="header__login">Đăng nhập</span>
                     </>
                     }
                 </span>

@@ -4,20 +4,15 @@ import {fetchDataSelector} from '../redux/selectors'
 import {fetchUser} from '../redux/Slice/adminSlice'
 import Header from "../Components/Header"
 import AUser from "../Components/AUser"
-import adminSlice from '../redux/Slice/adminSlice'
 import "../Style/PageStyle/Admin.css"
 function Admin() {
     const userStore = useSelector(fetchDataSelector)
     const dispatch = useDispatch()
+
     useEffect(() => {
         dispatch(fetchUser())
-    }, []) 
+    },[dispatch])
 
-   const getData =()=> {
-        dispatch(adminSlice.actions.addUser({
-            data:'test'
-        }))
-   }
     return ( 
         <div>
             <Header/>

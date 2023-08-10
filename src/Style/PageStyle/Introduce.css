@@ -2,6 +2,8 @@
     padding-top: 20px;
     display: flex;
     justify-content: space-around;
+    position: fixed;
+    width: 100%;
 }
 .content__nav {
     margin-top: 40px;
@@ -42,14 +44,7 @@
     align-items: center;
     color: #fff;
 }
-.content__aside-login {
-    background-color: #f2f2f5;
-    width: 300px;
-    height: 286px;
-    margin: 20px;
-    font-size: 1.5rem;
-    color: orangered;
-}
+
 .content__aside-hot {
     background-color: #f2f2f5;
     width: 300px;
@@ -72,34 +67,13 @@
     width: 710px;
     height: 200px;
 }
-.aside__login-main {
-    margin: 20px;
-    background-color: #fff;
-    width: 260px;
-    height: 214px;
-}
+
 .aside__hot-main {
    display: flex;
    justify-content: flex-start;
    margin: 20px;
 }
-.content__register {
-    color: #333;
-    font-size: .7rem;
-}
-.input {
-    margin-top: 20px;
-    height: 30px;
-    width: 230px;
-}
-.login {
-    height: 30px;
-    width: 230px;
-    background-color: orangered;
-    border: solid 1px #333;
-    margin-top: 30px;
-    color: #fff;
-}
+
 .img{
     width: 20%;
 }

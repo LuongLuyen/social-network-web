@@ -1,20 +1,16 @@
-import { useState,useEffect } from "react"
 import Header from "../Components/Header"
+import Login from "../Components/Login"
+import Register from "../Components/Register"
 import Img from "../assets/img/aaa.jpg"
 import Loginbg from "../assets/img/loginbg.jpg"
 import Anhnen from "../assets/img/anhnen.jpg"
 import Anhnen1 from "../assets/img/anhnen1.jpg"
+import { useSelector } from "react-redux"
+import {statusLoginSelector} from '../redux/selectors'
 import '../Style/PageStyle/Introduce.css'
 
 function Introduce() {
-    const [localData, setLocalData] = useState(null)
-
-    useEffect(() => {
-        if(localData !== null){
-            sessionStorage.setItem('localData', JSON.stringify(localData))
-        }
-    }, [localData])
-
+    const statusStore = useSelector(statusLoginSelector)
     return ( 
         <div>
             <Header/>
@@ -84,36 +80,7 @@ function Introduce() {
                     </div>
                 </article>
                 <aside className="content__aside">
-                    <div className="content__aside-login">
-                        Đăng nhập
-                    <form method='POST' action= "http://localhost:5000/user-api/login">
-                        <div className="aside__login-main">
-                            <div>
-                                <input 
-                                    className="input" 
-                                    placeholder="Username"
-                                    type='text'
-                                    name='userName'
-                                    onChange={(e)=>setLocalData( e.target.value)}
-                                />
-                                <input 
-                                    className="input" 
-                                    placeholder="Password"
-                                    type='password'
-                                    name='password'
-                                />
-                            </div>
-                            <div className="content__register">
-                                <span> Ghi nhớ tôi</span>
-                                <span> quên mật khẩu</span>
-                            </div>
-                                <button className="login">Đăng nhập</button>
-                            <div className="content__register">
-                                Mình chưa có tài khoản ? Đăng ký ngay nào
-                            </div>
-                        </div>
-                    </form>
-                    </div>
+                    {statusStore[0].register? <Register/>: <Login/>}
                     <div className="content__aside-hot">
                         Chủ đề nóng trên mạng
                         <div className="aside__hot-main">

@@ -1,0 +1,49 @@
+.content__aside-login {
+    background-color: #f2f2f5;
+    width: 300px;
+    height: 286px;
+    margin: 20px;
+    font-size: 1.5rem;
+    color: orangered;
+}
+.aside__login-main {
+    margin: 20px;
+    background-color: #fff;
+    width: 260px;
+    height: 214px;
+    overflow-y: scroll;
+}
+.content__login {
+    color: #333;
+    font-size: .7rem;
+    display: flex;
+    justify-content: space-between;
+}
+.content__register {
+    color: #333;
+    font-size: .7rem;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+.input {
+    margin-top: 20px;
+    height: 30px;
+    width: 230px;
+}
+.login {
+    height: 30px;
+    width: 235px;
+    background-color: orangered;
+    border: solid 1px #333;
+    margin-top: 10px;
+    color: #fff;
+}
+.content__d {
+   margin-left: 10px;
+   margin-right: 10px;
+   margin-top: 10px;
+}
+.note {
+    font-size: .6rem;
+}

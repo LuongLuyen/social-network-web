@@ -5,6 +5,7 @@
     display: flex;
     justify-content: center;
     padding-bottom: 10px;
+    position: fixed;
 }
 .video__nav {
     margin-top: 60px;
