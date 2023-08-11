@@ -1,16 +1,19 @@
 import Header from "../Components/Header"
 import Login from "../Components/Login"
 import Register from "../Components/Register"
+import CreateUser from "../Components/CreateUser"
 import Img from "../assets/img/aaa.jpg"
 import Loginbg from "../assets/img/loginbg.jpg"
 import Anhnen from "../assets/img/anhnen.jpg"
 import Anhnen1 from "../assets/img/anhnen1.jpg"
 import { useSelector } from "react-redux"
 import {statusLoginSelector} from '../redux/selectors'
+import {createUserSelector} from '../redux/selectors'
 import '../Style/PageStyle/Introduce.css'
 
 function Introduce() {
     const statusStore = useSelector(statusLoginSelector)
+    const createUserStore = useSelector(createUserSelector)
     return ( 
         <div>
             <Header/>
@@ -80,8 +83,9 @@ function Introduce() {
                     </div>
                 </article>
                 <aside className="content__aside">
-                    {statusStore[0].register? <Register/>: <Login/>}
+                    {statusStore.loginRegister.register? <Register/>: <Login/>}
                     <div className="content__aside-hot">
+                        {createUserStore[0] && <CreateUser props = {createUserStore[0]}/>}
                         Chủ đề nóng trên mạng
                         <div className="aside__hot-main">
                             <img className="img" alt ="img" src={Img}/>

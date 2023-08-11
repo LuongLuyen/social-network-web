@@ -22,10 +22,10 @@ function Header() {
     const dispatch = useDispatch()
 
     const clickRegister = ()=>{
-        dispatch(introduceSlice.actions.statusLogin([{register: true}, {login: false}]))
+        dispatch(introduceSlice.actions.statusLogin({register: true}, {login: false}))
     }
     const clickLogin = ()=>{
-        dispatch(introduceSlice.actions.statusLogin([{register: false}, {login: true}]))
+        dispatch(introduceSlice.actions.statusLogin({register: false}, {login: true}))
     }
 
     const checkLogin = () =>{

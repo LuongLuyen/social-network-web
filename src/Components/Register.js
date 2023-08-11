@@ -1,4 +1,6 @@
 import { useState } from 'react'
+import { useDispatch} from 'react-redux'
+import {createUser} from '../redux/Slice/introduceSlice'
 import '../Style/ComponentStyle/Login.css'
 function Register() {
     const [userName, setUserName] = useState('')
@@ -6,10 +8,24 @@ function Register() {
     const [fullName, setFullName] = useState('')
     const [email, setEmail] = useState('')
     const [role, setRole] = useState('USER')
+    console.log(role)
+
+    const dispatch = useDispatch()
+
+    const sendData = ()=>{
+        dispatch(createUser({
+            userName: userName,
+            password: password,
+            fullName: fullName,
+            email: email,
+            role: role
+        }))
+    }
+
     return (  
         <div className="content__aside-login">
             Đăng Ký
-            <form method='POST' action= "/">
+            <div>
                 <div className="aside__login-main">
                     <input 
                         className="input" 
@@ -28,20 +44,27 @@ function Register() {
                     <input 
                         className="input" 
                         placeholder="FullName"
-                        type='password'
-                        name='password'
+                        type='text'
+                        name='fullName'
                         onChange={(e)=>setFullName( e.target.value)}
                     />
                     <input 
                         className="input" 
                         placeholder="nguyenvana2222@gmail.com"
-                        type='password'
-                        name='password'
+                        type='text'
+                        name='email'
                         onChange={(e)=>setEmail( e.target.value)}
                     />
-                    <button className="login">Đăng ký</button>
+                    <input 
+                        className="input" 
+                        placeholder="USER or ADMIN"
+                        type='text'
+                        name='role'
+                        onChange={(e)=>setRole( e.target.value)}
+                    />
+                    <button onClick={sendData} className="login">Đăng ký</button>
                 </div>
-            </form>
+            </div>
         </div>
     )
 }
