@@ -1,6 +1,5 @@
 .home-content{
     margin-top: 10px;
-    background-color: #191919;
     height: 570px;
     border-radius: 5px;
 }
@@ -48,6 +47,12 @@
     width: 80%;
     margin-left: 25px;
     margin-top: 30px;
+}
+.home-content-list {
+    background-color: #191919;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 10px;
 }
 .home-content-quantity {
     margin-top: 20px;
