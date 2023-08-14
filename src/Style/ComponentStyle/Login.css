@@ -47,3 +47,10 @@
 .note {
     font-size: .6rem;
 }
+.role {
+    font-size: .8rem;
+    color: #333;
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+}

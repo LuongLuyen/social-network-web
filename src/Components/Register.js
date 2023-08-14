@@ -8,7 +8,6 @@ function Register() {
     const [fullName, setFullName] = useState('')
     const [email, setEmail] = useState('')
     const [role, setRole] = useState('USER')
-    console.log(role)
 
     const dispatch = useDispatch()
 
@@ -20,6 +19,9 @@ function Register() {
             email: email,
             role: role
         }))
+    }
+    const handleRole = (e)=>{
+        e.target.checked ?  setRole("ADMIN") : setRole("USER")
     }
 
     return (  
@@ -50,18 +52,18 @@ function Register() {
                     />
                     <input 
                         className="input" 
-                        placeholder="nguyenvana2222@gmail.com"
+                        placeholder="NguyenVanA2222@gmail.com"
                         type='text'
                         name='email'
                         onChange={(e)=>setEmail( e.target.value)}
                     />
-                    <input 
-                        className="input" 
-                        placeholder="USER or ADMIN"
-                        type='text'
-                        name='role'
-                        onChange={(e)=>setRole( e.target.value)}
-                    />
+                    <div className='role'>
+                        <div>Loại tài khoản: </div>
+                        <div>
+                            <input onChange={handleRole} type="checkbox"/>
+                            Admin
+                        </div>
+                    </div>
                     <button onClick={sendData} className="login">Đăng ký</button>
                 </div>
             </div>

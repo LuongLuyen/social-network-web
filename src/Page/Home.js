@@ -13,6 +13,9 @@ import { PiNumberCircleSevenFill } from 'react-icons/pi'
 import { PiNumberCircleEightFill } from 'react-icons/pi'
 import { PiNumberCircleNineFill } from 'react-icons/pi'
 import { useState, useEffect } from "react"
+import { useDispatch, useSelector } from "react-redux"
+import {fetchPostSelector} from '../redux/selectors'
+import { fetchPost } from "../redux/Slice/homeSlice"
 import Img from "../assets/img/aab.jpg"
 import Homebg from "../assets/img/homebg.jpg"
 import HomeContent from "../Components/HomeContent"
@@ -21,8 +24,12 @@ import Nav from "../Components/Nav"
 function Home() {
     const CHECK = (window.location.pathname).slice(1)
     const [active, setActive]= useState(false)
-    
+    const postStore = useSelector(fetchPostSelector)
+    console.log(postStore)
+
+    const dispatch = useDispatch()
     useEffect(() => {
+        dispatch(fetchPost())
         if(CHECK === "home"){
             const roleOld = JSON.parse(sessionStorage.getItem('role'))
             if(roleOld !== "ADMIN")
@@ -33,7 +40,7 @@ function Home() {
                 sessionStorage.setItem('role', JSON.stringify("ADMIN"))
             }
         }
-    }, [CHECK])
+    }, [CHECK,dispatch])
 
     const changeHeader = ()=>{
         if(window.scrollY >= 160){
