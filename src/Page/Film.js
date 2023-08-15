@@ -11,10 +11,18 @@ import { GiCampCookingPot } from 'react-icons/gi'
 import { SiRiotgames } from 'react-icons/si'
 import { BiSolidFilm } from 'react-icons/bi'
 import FilmContent from "../Components/FilmContent"
-import { useState } from "react"
+import { useState, useEffect } from "react"
+import { useDispatch } from "react-redux"
+import { fetchFilm } from "../redux/Slice/filmSlice"
 import "../Style/PageStyle/Film.css"
 function Film() {
     const [click, setClick]= useState(false)
+
+    const dispatch = useDispatch()
+    useEffect(() => {
+        dispatch(fetchFilm())
+    }, [dispatch])
+
     const handleClick = ( )=> {
         setClick(!false)
     }
