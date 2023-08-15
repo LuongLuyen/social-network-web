@@ -14,7 +14,9 @@ export default createSlice({
                 state.status = 'loading'
             })
             .addCase(fetchPost.fulfilled, (state, action) => {
-                state.data = action.payload
+                state.data = action.payload.filter((item)=>{
+                    return item.content !== null
+                })
                 state.status = 'idle'
             })
     },
