@@ -1,6 +1,6 @@
 .content__aside-login {
     background-color: #f2f2f5;
-    width: 300px;
+    width: 68%;
     height: 286px;
     margin: 20px;
     font-size: 1.5rem;
@@ -9,9 +9,10 @@
 .aside__login-main {
     margin: 20px;
     background-color: #fff;
-    width: 260px;
+    width: 86%;
     height: 214px;
     overflow-y: scroll;
+    border-radius: 5px;
 }
 .content__login {
     color: #333;
@@ -29,11 +30,11 @@
 .input {
     margin-top: 20px;
     height: 30px;
-    width: 230px;
+    width: 86%;
 }
 .login {
     height: 30px;
-    width: 235px;
+    width: 86%;
     background-color: orangered;
     border: solid 1px #333;
     margin-top: 10px;
@@ -53,4 +54,22 @@
     display: flex;
     justify-content: space-between;
     margin: 10px;
+}
+
+/* responsive
+/* Mobile: width < 740px = 46.1875em */
+@media (max-width: 46.1875em) {
+    .aside__login-main {
+        margin-left: 5px;
+        width: 182px;
+        height: 238px;
+    }
+
+}
+/* Tablet: width >= 740px and width <1024px  */
+@media (min-width: 46.25em) and (max-width: 63.9375em){
+    .aside__login-main {
+        width: 95%;
+        height: 180px;
+    }
 }

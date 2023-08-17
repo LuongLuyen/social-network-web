@@ -45,28 +45,28 @@ function Header() {
             </div>
             <div className="header__list">
                 <span className="header__list-item">
-                    <span className="header__list-icon">
+                    <Link className="header__list-icon" to="/home">
                         <AiOutlineHome/>
-                    </span>
-                    <Link className="header__list-title" to="/home">
-                        Trang chủ
                     </Link>
+                    <span className="header__list-title">
+                        Trang Chủ
+                    </span>
                 </span>
                 <span className="header__list-item">
-                    <span className="header__list-icon">
+                    <Link className="header__list-icon" to="/film">
                         <AiOutlineVideoCamera/>
-                    </span>
-                    <Link className="header__list-title" to="/film">
-                        Phim
                     </Link>
+                    <span className="header__list-title">
+                        Phim
+                    </span>
                 </span>
                 <span className="header__list-item">
-                    <span className="header__list-icon">
+                    <Link className="header__list-icon" to="/chat">
                         <RiMessengerLine/>
-                    </span>
-                    <Link className="header__list-title" to="/chat">
-                        Nhắn tin
                     </Link>
+                    <span className="header__list-title">
+                        Nhắn tin
+                    </span>
                 </span>
                 <span className="header__list-item">
                     {localData && role ?
