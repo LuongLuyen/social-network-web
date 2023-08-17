@@ -7,14 +7,16 @@ import { FaVideo } from 'react-icons/fa'
 import { FaList } from 'react-icons/fa'
 import Avata from "../assets/img/aaa.jpg"
 import "../Style/ComponentStyle/ChatMain.css"
-function ChatMain() {
+function ChatMain({props}) {
+    console.log(props)
+
     return ( 
         <div className="chat__main">
             <div className="chat__main-header">
                 <div className="chat__header">
                     <img className="chat__avt" alt="/"src={Avata}/>
                     <div className="chat__user">
-                        <span className="chat__name">Nguyễn Văn A</span>
+                        <span className="chat__name">{props}</span>
                         <span className="chat__d">Đang hoạt động</span>
                     </div>
                     <div className="chat__call">
@@ -34,59 +36,89 @@ function ChatMain() {
                 <div className="other__chat">
                     <img className="other__chat-avt" alt="/" src={Avata}/>
                     <div className="other__chat-nd">
-                        Đây là nội dung tin nhắn của người khác
+                        <span className='other__chat-nd-item'>
+                            Đây là nội dung tin nhắn của người khác
+                        </span>
                     </div>
                 </div>
                 <div className="other__chat">
                     <img className="other__chat-avt" alt="/" src={Avata}/>
                     <div className="other__chat-nd">
-                        Đây là nội dung tin nhắn của người khác
+                        <span className='other__chat-nd-item'>
+                            Đây là nội dung tin nhắn của người khác
+                        </span>
                     </div>
                 </div>
 
                 <div className="you__chat">
-                    Đây là tin nhắn của tôi
+                    <span className="you__chat-item">
+                        Đây là tin nhắn của tôi
+                    </span>
                 </div>
                 <div className="you__chat">
-                    Đây là tin nhắn của tôi
+                    <span className="you__chat-item">
+                        Đây là tin nhắn của tôi
+                    </span>
                 </div>
+              
                 <div className="other__chat">
                     <img className="other__chat-avt" alt="/" src={Avata}/>
                     <div className="other__chat-nd">
-                        Đây là nội dung tin nhắn của người khác
+                        <span className='other__chat-nd-item'>
+                            Đây là nội dung tin nhắn của người khác
+                        </span>
                     </div>
                 </div>
                 <div className="you__chat">
-                    Đây là tin nhắn của tôi
+                    <span className="you__chat-item">
+                        Đây là tin nhắn của tôi
+                    </span>
                 </div>
                 <div className="you__chat">
-                    Đây là tin nhắn của tôi
+                    <span className="you__chat-item">
+                        Đây là tin nhắn của tôi
+                    </span>
+                </div>
+                <div className="you__chat">
+                    <span className="you__chat-item">
+                        Đây là tin nhắn của tôi
+                    </span>
                 </div>
                 <div className="other__chat">
                     <img className="other__chat-avt" alt="/" src={Avata}/>
                     <div className="other__chat-nd">
-                        Đây là nội dung tin nhắn của người khác
+                        <span className='other__chat-nd-item'>
+                            Đây là nội dung tin nhắn của người khác
+                        </span>
                     </div>
                 </div>
                 <div className="you__chat">
-                    Đây là tin nhắn của tôi
+                    <span className="you__chat-item">
+                        Đây là tin nhắn của tôi test xem chiều dài tối đa bao nhiêu
+                    </span>
                 </div>
                 <div className="other__chat">
                     <img className="other__chat-avt" alt="/" src={Avata}/>
                     <div className="other__chat-nd">
-                        Đây là nội dung tin nhắn của người khác
+                        <span className='other__chat-nd-item'>
+                            Đây là nội dung tin nhắn của người khác
+                        </span>
                     </div>
                 </div>
                 <div className="other__chat">
                     <img className="other__chat-avt" alt="/" src={Avata}/>
                     <div className="other__chat-nd">
-                        Đây là nội dung tin nhắn của người khác
+                        <span className='other__chat-nd-item'>
+                            Đây là nội dung tin nhắn của người khác
+                        </span>
                     </div>
                 </div>
                 <div className="other__chat">
                     <img className="other__chat-avt" alt="/" src={Avata}/>
                     <div className="other__chat-nd">
-                        Đây là nội dung tin nhắn của người khác
+                        <span className='other__chat-nd-item'>
+                            Đây là nội dung tin nhắn của người khác
+                        </span>
                     </div>
                 </div>
             </div>

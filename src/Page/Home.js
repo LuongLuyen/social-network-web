@@ -25,6 +25,7 @@ function Home() {
     const [active, setActive]= useState(false)
 
     const dispatch = useDispatch()
+
     useEffect(() => {
         dispatch(fetchPost())
         if(CHECK === "home"){

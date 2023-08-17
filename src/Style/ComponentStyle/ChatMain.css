@@ -101,23 +101,30 @@
 .other__chat-nd {
     margin-left: 20px;
     height: 50px;
-    background-color: #2a2a2a;
     width: 438px;
     display: flex;
     justify-content: flex-start;
+}
+.other__chat-nd-item {
     padding-left: 20px;
+    padding-right: 20px;
     border-bottom-left-radius: 50px;
     border-top-right-radius: 50px;
     border-bottom-right-radius: 50px;
+    background-color: #2a2a2a;
 }
 .you__chat {
-    background-color: #0084ff;
     display: flex;
     justify-content: flex-end;
     margin: 10px 10px 10px 300px;
     padding-right: 20px;
     height: 50px;
+}
+.you__chat-item {
+    background-color: #0084ff;
     border-bottom-right-radius: 50px;
     border-top-left-radius: 50px;
     border-bottom-left-radius: 50px;
+    padding-right: 20px;
+    padding-left: 20px;
 }
