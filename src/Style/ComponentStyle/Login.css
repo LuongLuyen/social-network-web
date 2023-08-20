@@ -39,6 +39,7 @@
     border: solid 1px #333;
     margin-top: 10px;
     color: #fff;
+    margin-left: 20px;
 }
 .content__d {
    margin-left: 10px;
@@ -55,6 +56,13 @@
     justify-content: space-between;
     margin: 10px;
 }
+.login__status {
+    color: red;
+    font-size: .9rem;
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 12px;
+}
 
 /* responsive
 /* Mobile: width < 740px = 46.1875em */
@@ -63,6 +71,9 @@
         margin-left: 5px;
         width: 182px;
         height: 238px;
+    }
+    .content__aside {
+        display: none;
     }
 
 }

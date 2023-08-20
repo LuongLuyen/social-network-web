@@ -1,6 +1,7 @@
 import { AiOutlineHome } from 'react-icons/ai'
 import { AiOutlineVideoCamera } from 'react-icons/ai'
 import { RiMessengerLine } from 'react-icons/ri'
+import { FaList } from 'react-icons/fa'
 import { CiSearch } from 'react-icons/ci'
 import { useDispatch} from "react-redux"
 import introduceSlice from '../redux/Slice/introduceSlice'
@@ -43,6 +44,7 @@ function Header() {
                     <CiSearch/>
                 </span>
             </div>
+
             <div className="header__list">
                 <span className="header__list-item">
                     <Link className="header__list-icon" to="/home">
@@ -93,6 +95,9 @@ function Header() {
                     }
                 </span>
             </div>
+            {/* <div className='header__nav'>
+                <FaList/>
+            </div> */}
         </header>
      )
 }

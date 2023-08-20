@@ -3,6 +3,7 @@ import Home from './Page/Home'
 import Film from './Page/Film'
 import Chat from './Page/Chat'
 import Admin from './Page/Admin'
+import Test from './Page/Test'
 import { useState,useEffect } from "react"
 import{
   BrowserRouter as Router,
@@ -27,6 +28,7 @@ function App() {
       <Router>
         <Routes>
           <Route path='/' element={<Introduce/>}/>
+          <Route path='/test' element={<Test/>}/>
           <Route path='/home' element={localData ? <Home/> : <Introduce/>}/>
           <Route path='/film' element={localData ? <Film/> : <Introduce/>}/>
           <Route path='/admin' element={role === "ADMIN"? <Admin/> : <Home/>}/>

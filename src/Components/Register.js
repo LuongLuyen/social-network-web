@@ -64,7 +64,7 @@ function Register() {
                             Admin
                         </div>
                     </div>
-                    <button onClick={sendData} className="login">Đăng ký</button>
+                    <div onClick={sendData} className="login">Đăng ký</div>
                 </div>
             </div>
         </div>

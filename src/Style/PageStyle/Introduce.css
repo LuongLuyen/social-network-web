@@ -14,7 +14,8 @@
 .content__article {
     margin-top: 20px;
     width: 50%;
-    height: 100vh;
+    height: 95vh;
+    overflow-y: scroll;
 }
 .content__aside {
     margin-top: 20px;
@@ -50,7 +51,7 @@
 .content__aside-hot {
     background-color: #f2f2f5;
     width: 67%;
-    height: 420px;
+    height: 320px;
     margin: 20px;
     overflow: auto;
     color: orangered;
@@ -131,26 +132,30 @@
     .title2 {
         display: none;
     }
+    .content__article {
+        width: 95%;
+    }
     .title3 {
         font-size: .5rem;
         margin: 0;
     }
     .content__article-main {
         margin: 0;
-        height: 280px;
+        height: 305px;
+        width: 370px;
     }
     .bg {
-        width: 160px;
+        width: 330px;
     }
-    .content__aside {
+    /* .content__aside {
         width: 180px;
     }
     .content__aside-login {
-        width: 192px;
+        width: 100%;
         margin-left: -10px;
         height: 280px;
         font-size: .8rem;
-    }
+    } */
 }
 /* Tablet: width >= 740px and width <1024px  */
 @media (min-width: 46.25em) and (max-width: 63.9375em){

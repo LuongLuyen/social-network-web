@@ -21,24 +21,13 @@ import HomeContent from "../Components/HomeContent"
 import Header from "../Components/Header"
 import Nav from "../Components/Nav"
 function Home() {
-    const CHECK = (window.location.pathname).slice(1)
     const [active, setActive]= useState(false)
 
     const dispatch = useDispatch()
 
     useEffect(() => {
         dispatch(fetchPost())
-        if(CHECK === "home"){
-            const roleOld = JSON.parse(sessionStorage.getItem('role'))
-            if(roleOld !== "ADMIN")
-            sessionStorage.setItem('role', JSON.stringify("USER"))
-        }else if(CHECK === "admin"){
-            const roleOld = JSON.parse(sessionStorage.getItem('role'))
-            if(roleOld === null){
-                sessionStorage.setItem('role', JSON.stringify("ADMIN"))
-            }
-        }
-    }, [CHECK,dispatch])
+    }, [dispatch])
 
     const changeHeader = ()=>{
         if(window.scrollY >= 160){

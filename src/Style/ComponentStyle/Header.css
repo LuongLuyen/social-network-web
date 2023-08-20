@@ -68,15 +68,25 @@
     color: #fff;
     text-decoration: none;
 }
+.header__nav {
+    display: none;
+}
 
 /* responsive
 /* Mobile: width < 740px = 46.1875em */
 @media (max-width: 46.1875em) {
+    .header__nav {
+        display: block;
+        margin: 10px;
+    }
+    .header__list {
+        display: none;
+    }
     .header__search {
         margin-left: 10px;
     }
     .header__input {
-        width: 85px;
+        width: 215px;
     }
     .header__list-title{
         display: none;
@@ -85,7 +95,7 @@
         font-size: 1rem;
     }
     .search {
-        margin-left: 144px;
+        margin-left: 265px;
     }
     .header__list {
         margin-right: 10px;
