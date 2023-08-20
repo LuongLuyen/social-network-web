@@ -24,3 +24,32 @@
     margin-left: -50px;
     margin-top: 6px;
 }
+
+/* responsive
+/* Mobile: width < 740px = 46.1875em */
+@media (max-width: 46.1875em) {
+    .earth__input {
+        width: 100%;
+        height: 20px;
+    }
+    .earth__logo {
+        display: none;
+    }
+    .earth__search {
+        top: 2%;
+    }
+}
+/* Tablet: width >= 740px and width <1024px  */
+@media (min-width: 46.25em) and (max-width: 63.9375em){
+    .earth__input {
+        width: 200%;
+        height: 30px;
+    }
+    .earth__logo {
+        font-size: 1.5rem;
+        margin-left: 100%;
+    }
+    .earth__search {
+        top: 1%;
+    }
+}

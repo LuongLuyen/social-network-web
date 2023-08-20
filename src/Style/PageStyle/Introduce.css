@@ -8,7 +8,7 @@
 /* main */
 .content__nav {
     margin-top: 40px;
-    width: 20%;
+    width: 17%;
     height: 100vh;
 }
 .content__article {
@@ -167,6 +167,7 @@
     }
     .content__aside-hot {
         font-size: .8rem;
+        width: 215px;
     }
     .content__article-main  {
         height: 288px;
@@ -177,6 +178,7 @@
     }
     .content__aside-login {
         height: 224px;
+        width: 215px;
     }
     .aside__hot-main {
         flex-wrap: wrap;

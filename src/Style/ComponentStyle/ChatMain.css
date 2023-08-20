@@ -128,3 +128,25 @@
     padding-right: 20px;
     padding-left: 20px;
 }
+
+
+/* responsive
+/* Mobile: width < 740px = 46.1875em */
+@media (max-width: 46.1875em) {
+
+}
+/* Tablet: width >= 740px and width <1024px  */
+@media (min-width: 46.25em) and (max-width: 63.9375em){
+    .chat__main {
+        width: 70%;
+    }
+    .chat__main-content {
+        height: 82vh;
+    }
+    .chat__footer-input {
+        width: 350px;
+    }
+    .you__chat {
+        margin: 10px 10px 10px 200px;
+    }
+}

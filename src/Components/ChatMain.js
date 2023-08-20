@@ -8,7 +8,6 @@ import { FaList } from 'react-icons/fa'
 import Avata from "../assets/img/aaa.jpg"
 import "../Style/ComponentStyle/ChatMain.css"
 function ChatMain({props}) {
-    console.log(props)
 
     return ( 
         <div className="chat__main">

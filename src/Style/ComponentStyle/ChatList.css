@@ -50,3 +50,34 @@
 .chat__list-d {
     font-size: .8rem;
 }
+
+
+/* responsive
+/* Mobile: width < 740px = 46.1875em */
+@media (max-width: 46.1875em) {
+    .chat__main {
+        display: none;
+    }
+    .chat__list {
+        width: 100%;
+    }
+}
+/* Tablet: width >= 740px and width <1024px  */
+@media (min-width: 46.25em) and (max-width: 63.9375em){
+    .chat__list {
+        width: 30%;
+    }
+    .chat__list-avt {
+        width: 50px;
+    }
+    .chat__main-header {
+        height: 60px;
+    }
+    .chat__avt {
+        width: 50px;
+        height: 50px;
+    }
+    .chat__call {
+        margin: 15px 0 0 250px;
+    }
+}

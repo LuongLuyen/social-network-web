@@ -35,3 +35,48 @@
     margin-bottom: 50px;
     color: #ea8011;
 }
+
+
+/* responsive
+/* Mobile: width < 740px = 46.1875em */
+@media (max-width: 46.1875em) {
+    .main__nav {
+        display: none;
+    }
+    .main__nav-list {
+        margin: 20px 20px 20px 50px;
+    }
+    .user__table {
+        width: 410px;
+        font-size: .5rem;
+    }
+    .main__nav-title {
+        margin-top: 40px;
+        font-size: 1.2rem;
+        margin-bottom: 0;
+    }
+    .main__content {
+        width: 100%;
+    }
+    .user__table-list {
+        margin: 10px;
+    }
+
+}
+/* Tablet: width >= 740px and width <1024px  */
+@media (min-width: 46.25em) and (max-width: 63.9375em){
+    .main__nav {
+        width: 30%;
+    }
+    .main__nav-list {
+        margin: 20px 20px 20px 50px;
+    }
+    .user__table {
+        width: 575px;
+        font-size: .8rem;
+    }
+    .main__nav-title {
+        font-size: 1.2rem;
+        margin-bottom: 0;
+    }
+}

@@ -27,3 +27,18 @@
     padding-right: 5px;
     color: #ea8011;
 }
+
+/* responsive
+/* Mobile: width < 740px = 46.1875em */
+@media (max-width: 46.1875em) {
+    .home__nav {
+        display: none;
+    }
+}
+/* Tablet: width >= 740px and width <1024px  */
+@media (min-width: 46.25em) and (max-width: 63.9375em){
+    .home__nav {
+        width: 20%;
+        height: 40vh;
+    }
+}

@@ -23,6 +23,7 @@ function App() {
      setRole(role)
     }
   }, [])
+
   return (
     <div className="App">
       <Router>

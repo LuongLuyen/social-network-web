@@ -21,7 +21,8 @@ function Login() {
             return null
         }
         try{
-            const res = await axios.post("http://localhost:8080/socialnetwork/login", {userName, password})
+            // const res = await axios.post("http://localhost:8080/socialnetwork/login", {userName, password})
+            const res = await axios.post("http://localhost:5000/user-api/login", {userName, password})
             const dataDB = res.data
             if(dataDB.userName === userName && dataDB.password === password && dataDB.role === "USER"){
                 setLocalData(dataDB.userName)
@@ -76,7 +77,11 @@ function Login() {
                         </div>
                         <div className="content__d"> quên mật khẩu</div>
                     </div>
-                        <div onClick={Authentication} className="login">Đăng nhập</div>
+                        <div onClick={Authentication} className="login__btn">
+                            <span>
+                                Đăng nhập
+                            </span>
+                        </div>
                     <div className="content__register">
                         Mình chưa có tài khoản ? Đăng ký ngay nào
                     </div>

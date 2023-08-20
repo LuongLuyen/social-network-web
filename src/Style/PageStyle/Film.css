@@ -82,3 +82,32 @@
     margin: 10px;
     color: #fff;
 }
+
+
+/* responsive
+/* Mobile: width < 740px = 46.1875em */
+@media (max-width: 46.1875em) {
+    .video__nav {
+        display: none;
+    }
+    .video__content {
+        width: 100%;
+    }
+    .filmcontent__video {
+        height: 220px;
+    }
+    .video__main-item {
+        width: 362px;
+        height: 318px;
+    }
+}
+/* Tablet: width >= 740px and width <1024px  */
+@media (min-width: 46.25em) and (max-width: 63.9375em){
+    .video__nav {
+        width: 20%;
+        margin-left: 20px;
+    }
+    .video__content {
+        width: 80%;
+    }
+}

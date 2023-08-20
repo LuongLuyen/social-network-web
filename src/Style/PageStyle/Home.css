@@ -109,3 +109,44 @@
 .aside-box3-icon {
     margin-right: 10px;
 }
+
+/* responsive
+/* Mobile: width < 740px = 46.1875em */
+@media (max-width: 46.1875em) {
+    .home__article {
+        width: 100%;
+    }
+    .home__aside {
+        display: none;
+    }
+    .home__article-box1  {
+        display: none;
+    }
+    .home__article-box2-img {
+        width: 98%;
+    }
+    .home__article-box2 {
+        height: 50px;
+    }
+}
+/* Tablet: width >= 740px and width <1024px  */
+@media (min-width: 46.25em) and (max-width: 63.9375em){
+    .home__article {
+        width: 60%;
+    }
+    .home__aside {
+        width: 20%;
+    }
+    .home__article-box1  {
+        display: none;
+    }
+    .home__aside-box1 {
+        height: 120px;
+    }
+    .home-content-user {
+        margin: 0;
+    }
+    .home-content-nd {
+        margin-left: 50px;
+    }
+}

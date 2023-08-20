@@ -49,55 +49,59 @@ function Header() {
                 <span className="header__list-item">
                     <Link className="header__list-icon" to="/home">
                         <AiOutlineHome/>
+                        <span className="header__list-title">
+                            Trang Chủ
+                        </span>
                     </Link>
-                    <span className="header__list-title">
-                        Trang Chủ
-                    </span>
                 </span>
                 <span className="header__list-item">
                     <Link className="header__list-icon" to="/film">
                         <AiOutlineVideoCamera/>
+                        <span className="header__list-title">
+                            Phim
+                        </span>
                     </Link>
-                    <span className="header__list-title">
-                        Phim
-                    </span>
                 </span>
                 <span className="header__list-item">
                     <Link className="header__list-icon" to="/chat">
                         <RiMessengerLine/>
+                        <span className="header__list-title">
+                            Nhắn tin
+                        </span>
                     </Link>
-                    <span className="header__list-title">
-                        Nhắn tin
-                    </span>
-                </span>
-                <span className="header__list-item">
-                    {localData && role ?
-                    <>
-                        {role === "ADMIN" ? 
-                            <Link className="header__register" to="/admin">
-                                Admin 
-                            </Link>
-                            : 
-                            <span className="header__register">Xin chào</span>
-                        }
-                        <span className="header__vach">|</span>
-                        <span className="header__login">{localData}</span>
-                        <Link onClick={checkLogin}className="header__logout" to="/">
-                            Thoát !
-                        </Link>
-                    </>
-                    : 
-                    <>
-                        <span onClick={clickRegister} className="header__register">Đăng ký</span>
-                        <span className="header__vach">|</span>
-                        <span onClick={clickLogin} className="header__login">Đăng nhập</span>
-                    </>
-                    }
                 </span>
             </div>
-            {/* <div className='header__nav'>
+            <div className='header__user'>
+                <span className="header__list-item">
+                        {localData && role ?
+                        <>
+                            {role === "ADMIN" ? 
+                                <Link className="header__register" to="/admin">
+                                    Admin 
+                                </Link>
+                                : 
+                                <span className="header__register">Xin chào</span>
+                            }
+                            <span className="header__vach">|</span>
+                            <span className="header__login">{localData}</span>
+                            <Link onClick={checkLogin}className="header__logout" to="/">
+                                Thoát !
+                            </Link>
+                        </>
+                        : 
+                        <>
+                            <span onClick={clickRegister} className="header__register">Đăng ký</span>
+                            <span className="header__vach">|</span>
+                            <span onClick={clickLogin} className="header__login">Đăng nhập</span>
+                        </>
+                        }
+                    </span>
+            </div>
+
+
+            <div className='header__nav'>
                 <FaList/>
-            </div> */}
+            </div>
         </header>
      )
 }
