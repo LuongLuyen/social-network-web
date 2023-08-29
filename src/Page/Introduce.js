@@ -7,7 +7,6 @@ import Loginbg from "../assets/img/loginbg.jpg"
 import Anhnen from "../assets/img/anhnen.jpg"
 import Anhnen1 from "../assets/img/anhnen1.jpg"
 import { useSelector } from "react-redux"
-import { useEffect } from "react"
 import {statusLoginSelector} from '../redux/selectors'
 import {createUserSelector} from '../redux/selectors'
 import '../Style/PageStyle/Introduce.css'
@@ -16,14 +15,6 @@ function Introduce() {
     const statusStore = useSelector(statusLoginSelector)
     const createUserStore = useSelector(createUserSelector)
 
-    useEffect(() => {
-        const data = JSON.parse(sessionStorage.getItem('localData'))
-        const dataRole = JSON.parse(sessionStorage.getItem('role'))
-        if (data && dataRole) {
-            sessionStorage.setItem('localData', JSON.stringify(null))
-            sessionStorage.setItem('role', JSON.stringify(null))
-        }
-    }, [])
     return ( 
         <div>
             <Header/>

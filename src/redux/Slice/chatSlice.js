@@ -1,8 +1,9 @@
 import { createSlice, createAsyncThunk } from '@reduxjs/toolkit'
+import axios from 'axios'
 
 export default createSlice({
     name: "CHAT",
-    initialState: { status: 'idle', data: [] },
+    initialState: { status: 'idle', dataUser: [], dataMess: [] },
     reducers: {
         addUser: (state, action) => {
             state.data.push(action.payload)
@@ -14,7 +15,11 @@ export default createSlice({
                 state.status = 'loading'
             })
             .addCase(fetchChatUser.fulfilled, (state, action) => {
-                state.data = action.payload
+                state.dataUser = action.payload
+                state.status = 'idle'
+            })
+            .addCase(fetchMessUser.fulfilled, (state, action) => {
+                state.dataMess.push(action.payload)
                 state.status = 'idle'
             })
     },
@@ -25,3 +30,17 @@ export const fetchChatUser = createAsyncThunk('fetchChatUser', async () => {
     const data = await res.json()
     return data
 })
+
+export const fetchMessUser = createAsyncThunk(
+    'fetchMessUser',
+    async(id)=>{
+        try {
+            const res = await axios.post("http://localhost:5000/mess-api/mess", id)
+            const data = res.data
+            return data
+        } catch (err) {
+            return err
+        }
+    }
+)
+

@@ -5,13 +5,16 @@ import {userChatSelector} from '../redux/selectors'
 import { useEffect } from "react"
 import { useDispatch } from "react-redux"
 import {fetchUser} from '../redux/Slice/adminSlice'
+import {fetchMessUser} from '../redux/Slice/chatSlice'
 import "../Style/ComponentStyle/ChatList.css"
 function ChatList() {
     const userStore = useSelector(userChatSelector)
 
     const dispatch = useDispatch()
     useEffect(()=>{
+        const id =1
         dispatch(fetchUser())
+        dispatch(fetchMessUser({id}))
     },[dispatch])
     return ( 
         <div className="chat__list">
