@@ -23,7 +23,7 @@ export default createSlice({
 })
 
 export const fetchPost = createAsyncThunk('fetchPost', async () => {
-    const res = await fetch('http://localhost:5000/user-api/post')
+    const res = await fetch(`${process.env.REACT_APP_DOMAIN_SERVER}/user-api/post`)
     const data = await res.json()
     return data
 })

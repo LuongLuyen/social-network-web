@@ -22,7 +22,7 @@ function Login() {
         }
         try{
             // const res = await axios.post("http://localhost:8080/socialnetwork/login", {userName, password})
-            const res = await axios.post("http://localhost:5000/user-api/login", {userName, password})
+            const res = await axios.post(`${process.env.REACT_APP_DOMAIN_SERVER}/user-api/login`, {userName, password})
             const dataDB = res.data
             if(dataDB.userName === userName && dataDB.password === password && dataDB.role === "USER"){
                 setLocalData(dataDB.userName)

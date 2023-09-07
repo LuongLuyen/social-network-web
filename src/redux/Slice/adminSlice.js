@@ -21,7 +21,7 @@ export default createSlice({
 })
 
 export const fetchUser = createAsyncThunk('fetchUser', async () => {
-    const res = await fetch('http://localhost:5000/admin-api/user/ADMIN')
+    const res = await fetch(`${process.env.REACT_APP_DOMAIN_SERVER}/admin-api/user/ADMIN`)
     const data = await res.json()
     return data
 })

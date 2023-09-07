@@ -23,7 +23,7 @@ export default createSlice({
 })
 
 export const fetchFilm = createAsyncThunk('fetchFilm', async () => {
-    const res = await fetch('http://localhost:5000/film-api/film')
+    const res = await fetch(`${process.env.REACT_APP_DOMAIN_SERVER}/film-api/film`)
     const data = await res.json()
     return data
 })

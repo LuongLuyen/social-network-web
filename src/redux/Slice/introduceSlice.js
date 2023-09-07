@@ -30,7 +30,7 @@ export const createUser = createAsyncThunk(
     'createUser',
     async(newUser)=>{
         try {
-            const res = await axios.post("http://localhost:5000/user-api/user", newUser)
+            const res = await axios.post(`${process.env.REACT_APP_DOMAIN_SERVER}/user-api/user`, newUser)
             return res.data
         } catch (err) {
             return err
