@@ -23,6 +23,15 @@ function App() {
      setRole(role)
     }
   }, [])
+  const chectUserRole = (localData,role)=>{
+    if(localData !== null && role !== null){
+      return(<Home/>)
+    }else if(localData !== null && role === "ADMIN"){
+      return(<Admin/>)
+    }else {
+      return(<Introduce/>)
+    }
+  }
 
   return (
     <div className="App">
@@ -30,10 +39,10 @@ function App() {
         <Routes>
           <Route path='/' element={<Introduce/>}/>
           <Route path='/test' element={<Test/>}/>
-          <Route path='/home' element={localData ? <Home/> : <Introduce/>}/>
-          <Route path='/film' element={localData ? <Film/> : <Introduce/>}/>
-          <Route path='/admin' element={role === "ADMIN"? <Admin/> : <Home/>}/>
-          <Route path='/chat' element={localData ? <Chat/> : <Introduce/>}/>
+          <Route path='/home' element={localData && role ? <Home/> : <Introduce/>}/>
+          <Route path='/film' element={localData && role ? <Film/> : <Introduce/>}/>
+          <Route path='/admin' element={chectUserRole(localData,role)}/>
+          <Route path='/chat' element={localData && role ? <Chat/> : <Introduce/>}/>
         </Routes>
     </Router>
     </div>

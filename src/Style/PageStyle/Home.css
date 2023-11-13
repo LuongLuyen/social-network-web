@@ -33,9 +33,7 @@
     margin-right: 10px;
 }
 .home__article-box1-item:hover{
-    background-color: orangered;
-    border-radius: 2px;
-    color: #333;
+    color: rgb(149, 255, 0);
 }
 .home__article-box2 {
     height: 80px;

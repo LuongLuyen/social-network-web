@@ -78,9 +78,7 @@ function Login() {
                         <div className="content__d"> quên mật khẩu</div>
                     </div>
                         <div onClick={Authentication} className="login__btn">
-                            <span>
-                                Đăng nhập
-                            </span>
+                            Đăng nhập
                         </div>
                     <div className="content__register">
                         Mình chưa có tài khoản ? Đăng ký ngay nào

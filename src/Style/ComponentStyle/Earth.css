@@ -13,6 +13,11 @@
     height: 40px;
     border-radius: 999px;
     padding-left: 20px;
+    border: solid 1px #fff;
+    padding-right: 20px;
+}
+.earth__input:focus, .earth__input:focus{
+    outline: none;
 }
 .earth__logo {
     color: #fff;
@@ -21,7 +26,7 @@
 .earth__icon {
     position: absolute;
     font-size: 30px;
-    margin-left: -50px;
+    margin-left: -40px;
     margin-top: 6px;
 }
 

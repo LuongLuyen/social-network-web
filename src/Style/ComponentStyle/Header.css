@@ -41,6 +41,11 @@
     border-radius: 999px;
     border: solid 1px #a2a0a0;
     position: relative;
+    padding-left: 20px;
+    padding-right: 40px;
+}
+.header__input:focus, .header__input:focus{
+    outline: none;
 }
 .header__list-item {
     margin-left: 5px;

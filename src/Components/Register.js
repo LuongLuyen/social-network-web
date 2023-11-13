@@ -12,13 +12,15 @@ function Register() {
     const dispatch = useDispatch()
 
     const sendData = ()=>{
-        dispatch(createUser({
-            userName: userName,
-            password: password,
-            fullName: fullName,
-            email: email,
-            role: role
-        }))
+        if(userName !== "" && password !== "" && fullName!== ""&& email !== ""){
+            dispatch(createUser({
+                userName: userName,
+                password: password,
+                fullName: fullName,
+                email: email,
+                role: role
+            }))
+        }
     }
     const handleRole = (e)=>{
         e.target.checked ?  setRole("ADMIN") : setRole("USER")
@@ -64,7 +66,7 @@ function Register() {
                             Admin
                         </div>
                     </div>
-                    <div onClick={sendData} className="login">Đăng ký</div>
+                    <div onClick={sendData} className="login login__btn">Đăng ký</div>
                 </div>
             </div>
         </div>
